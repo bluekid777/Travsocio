@@ -1,0 +1,180 @@
+/* CSS Document */
+
+html{
+	background-color:#49A6D8;
+}
+
+body{
+    min-width: 1000px;
+	max-width:80%;
+	margin-top:0px;
+	margin-bottom:0px;
+    margin: auto;
+	height:100%;
+}
+
+
+#container{
+    min-width: 1000px;
+	min-height: 100%;
+	position:relative;	
+}
+
+#header{
+	height: 36px;
+	width: 100%;
+	padding: 0px;
+	border-width: 0px;
+	background-color: #49A6D8;
+	color: #FFFFFF;
+}
+
+#logobar{
+	height:100%;
+	width:70%;
+	background-color:#49A6D8;
+	float:left;
+    line-height: 2em;
+}
+
+#logo{
+    padding-left: 30px;
+    padding-bottom: 2px;
+    height: 30px;
+    width: 40px;
+    float: left;
+    line-height: 45px;
+	font-style: normal;
+	font-weight: 700;
+	font-family: strumpf-std;
+	font-size: 30px;
+	text-align: left;
+}
+
+#logotitle{
+    height: 35px;
+    width: 150px;
+    float: left;
+    text-align: left;
+    line-height: 35px;
+	font-style: normal;
+	font-weight: 700;
+	font-family: "DejaVu Sans";
+	font-size: 20px;
+	text-align: left;
+}
+
+
+#status{
+	height:100%;
+	width:30%;
+	background-color:#617BA9;
+	float:right;
+}
+
+#content{
+	min-height: 850px;
+	padding-bottom: 60px;
+	background-color: #FFFFFF;
+	float: none;
+	color: #040404;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-size: large;
+}
+
+#button {
+    position: relative;
+    top: 5%;
+    margin: 4px 5px;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+
+#profile{
+    height: 60px;
+    width: 100%;
+    float: left;
+    color: #FFFFFF;
+    background-color: #617BA9;
+    border-color: #49A6D8;
+}
+
+#profilepic{
+    height: 100%;
+    width: 15%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#profiledata{
+    height: 100%;
+    width: 60%;
+    float: right;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: small;
+}
+
+#weather{
+    height: 139px;
+    width: 100%;
+    float: left;
+    background-color: #49A6D8;
+    border-bottom: dotted;
+    border-width: 1px;
+    border-color: #49A6D8;
+
+}
+
+#leftmain{
+    height: 200px;
+    width: 30%;
+    float: left;
+    border-color: #49A6D8;
+}
+
+#rightmain{
+    height: 200px;
+    width: 69.9%;
+    float: right;
+    border: dotted;
+    border-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-color: #49A6D8;
+
+}
+
+#footer{
+	height: 35px;
+	width: 100%;
+	bottom: 0;
+	background-color: #49A6D8;
+	position: relative;
+}
+
+#footerleft{
+    height:100%;
+	width:50%;
+	background-color:#617BA9;
+	float:left;
+}
+
+#footerright{
+    height:100%;
+	width:50%;
+	background-color:#49A6D8;
+	float:right;
+    line-height: 2em;
+    text-align: right;
+    color: white;
+}

@@ -16,12 +16,15 @@
 #
 FACEBOOK_APP_ID = '1426929370852106'
 FACEBOOK_APP_SECRET = '2158fd034e3235b417de3e55bd6df0c9'
+FOURSQUARE_CLIENT_ID = 'RO5GG3FDPEEPNGCVQ3DQVNDG3HEFXAW1R5NMGMTLQA0VROV0'
+FOURSQUARE_CLIENT_SECRET = 'UX35D0GPQW4T3Q2QTT4DMV5XVTEN2YAYMKMWVFYI0XUOAWAN'
 
 import facebook
 import webapp2
 import os
 import jinja2
 import urllib2
+import foursquare
 
 from google.appengine.ext import db
 from webapp2_extras import sessions
@@ -111,9 +114,10 @@ class BaseHandler(webapp2.RequestHandler):
         return self.session_store.get_session()
 
 
+
 class HomeHandler(BaseHandler):
     def get(self):
-        template = jinja_environment.get_template('main.html')
+        template = jinja_environment.get_template('_base.html')
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=self.current_user
