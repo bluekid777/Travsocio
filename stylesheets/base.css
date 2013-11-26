@@ -38,7 +38,7 @@ body{
 }
 
 #logo{
-    padding-left: 30px;
+    padding-left: 15px;
     padding-bottom: 2px;
     height: 30px;
     width: 40px;
@@ -104,22 +104,19 @@ body{
 
 #profilepic{
     height: 100%;
-    width: 15%;
+    width: 25%;
     float: left;
     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    vertical-align: middle;
     text-align: center;
 }
 
 #profiledata{
     height: 100%;
-    width: 60%;
+    width: 75%;
     float: right;
     text-align: left;
     color: #FFFFFF;
-    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-family: "small arial";
     font-size: small;
 }
 
