@@ -24,7 +24,9 @@ import webapp2
 import os
 import jinja2
 import urllib2
-import foursquare
+import pyfoursquare as foursquare
+import wikipedia
+
 
 from google.appengine.ext import db
 from webapp2_extras import sessions
@@ -40,6 +42,8 @@ class User(db.Model):
     name = db.StringProperty(required=True)
     profile_url = db.StringProperty(required=True)
     access_token = db.StringProperty(required=True)
+    bio = db.StringProperty(required=True)
+    city = db.StringProperty(required=True)
 
 
 class BaseHandler(webapp2.RequestHandler):
@@ -69,13 +73,19 @@ class BaseHandler(webapp2.RequestHandler):
                     # Not an existing user so get user info
                     graph = facebook.GraphAPI(cookie["access_token"])
                     profile = graph.get_object("me")
+                    loc = profile["location"]
+                    loc_id = loc["id"]
+                    city = graph.get_object(loc_id)
                     user = User(
                         key_name=str(profile["id"]),
                         id=str(profile["id"]),
                         name=profile["name"],
                         profile_url=profile["link"],
-                        access_token=cookie["access_token"]
+                        access_token=cookie["access_token"],
+                        bio = profile["bio"],
+                        city = city["name"]
                     )
+                    print user.access_token
                     user.put()
                 elif user.access_token != cookie["access_token"]:
                     user.access_token = cookie["access_token"]
@@ -85,7 +95,9 @@ class BaseHandler(webapp2.RequestHandler):
                     name=user.name,
                     profile_url=user.profile_url,
                     id=user.id,
-                    access_token=user.access_token
+                    access_token=user.access_token,
+                    bio=user.bio,
+                    city=user.city
                 )
                 return self.session.get("user")
         return None
@@ -114,13 +126,20 @@ class BaseHandler(webapp2.RequestHandler):
         return self.session_store.get_session()
 
 
-
 class HomeHandler(BaseHandler):
     def get(self):
         template = jinja_environment.get_template('_base.html')
+
+        # wiki api link: https://github.com/goldsmith/Wikipedia#
+
+        ny = wikipedia.page('Allahabad')
+
+
+
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
-            current_user=self.current_user
+            current_user=self.current_user,
+            summary=ny.summary
         )))
 
     def post(self):
