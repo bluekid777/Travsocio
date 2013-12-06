@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7983102-10d7-402d-964b-768cb7dcedab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyfoursquare/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyfoursquare/foursquare.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyfoursquare/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyfoursquare/test_foursquare.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyfoursquare/utils.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Travsocio.iml" afterPath="$PROJECT_DIR$/.idea/Travsocio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_base.html" afterPath="$PROJECT_DIR$/_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
@@ -71,7 +60,7 @@
       <file leaf-file-name="_base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="556" selection-end="556" vertical-scroll-proportion="0.7185629" vertical-offset="0" max-vertical-offset="1545">
+            <state line="5" column="27" selection-start="155" selection-end="155" vertical-scroll-proportion="0.22522523" vertical-offset="0" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -202,6 +191,505 @@
       <recent name="$PROJECT_DIR$/wikipedia" />
       <recent name="$PROJECT_DIR$/lxml" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Cipher/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Cipher/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/HMAC.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/HMAC.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/MD5.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/MD5.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/SHA.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/SHA.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Hash/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/AllOrNothing.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/AllOrNothing.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/Chaffing.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/Chaffing.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Protocol/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/DSA.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/DSA.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/ElGamal.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/ElGamal.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/RSA.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/RSA.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/pubkey.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/pubkey.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/qNEW.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/PublicKey/qNEW.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/RFC1751.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/RFC1751.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/number.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/number.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/randpool.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/randpool.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/test.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/Util/test.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/test.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/Crypto/test.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/acl/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/acl/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/acl/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/acl/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/app_engine.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/app_engine.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/appengine.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/alt/appengine.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/analytics/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/adminsettings/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/adminsettings/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/adminsettings/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/adminsettings/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/apps_property_entry.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/apps_property_entry.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/audit/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/audit/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/audit/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/audit/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/emailsettings/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/groups/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/migration/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/migration/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/migration/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/migration/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/multidomain/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/organization/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps_property.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/apps_property.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/auth.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/auth.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/blogger/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/books/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/calendar_resource/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/codesearch/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/codesearch/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/codesearch/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/codesearch/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contacts/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/contentforshopping/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/core.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/core.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/docs/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/dublincore/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/dublincore/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/dublincore/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/dublincore/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/exif/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/exif/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/finance/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/gauth.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/gauth.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/geo/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/geo/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/geo/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/geo/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/health/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/health/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/health/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/health/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/media/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/media/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/media/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/media/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/notebook/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/notebook/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/notebook/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/notebook/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/oauth/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/oauth/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/oauth/rsa.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/oauth/rsa.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/opensearch/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/opensearch/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/opensearch/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/opensearch/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/photos/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/photos/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/photos/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/photos/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/projecthosting/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sample_util.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sample_util.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/sites/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/text_db.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheet/text_db.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/spreadsheets/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/test_config.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/test_config.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/test_data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/test_data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/BaseDB.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/BaseDB.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/Checker.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/Checker.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/FileObject.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/FileObject.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/HandshakeSettings.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/HandshakeSettings.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/Session.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/Session.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/SessionCache.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/SessionCache.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/SharedKeyDB.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/SharedKeyDB.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/TLSConnection.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/TLSConnection.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/TLSRecordLayer.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/TLSRecordLayer.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/VerifierDB.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/VerifierDB.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/X509.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/X509.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/X509CertChain.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/X509CertChain.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/api.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/api.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/constants.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/constants.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/errors.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/errors.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/AsyncStateMachine.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/AsyncStateMachine.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/ClientHelper.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/ClientHelper.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/HTTPTLSConnection.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/HTTPTLSConnection.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/IMAP4_TLS.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/IMAP4_TLS.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/IntegrationHelper.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/IntegrationHelper.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/POP3_TLS.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/POP3_TLS.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/SMTP_TLS.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/SMTP_TLS.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSAsyncDispatcherMixIn.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSAsyncDispatcherMixIn.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSSocketServerMixIn.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSSocketServerMixIn.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSTwistedProtocolWrapper.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/TLSTwistedProtocolWrapper.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/XMLRPCTransport.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/XMLRPCTransport.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/integration/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/mathtls.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/mathtls.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/messages.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/messages.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/AES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/AES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/ASN1Parser.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/ASN1Parser.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_AES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_AES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_RC4.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_RC4.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_TripleDES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_TripleDES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_AES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_AES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RC4.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RC4.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RSAKey.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RSAKey.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_TripleDES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_TripleDES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_AES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_AES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RC4.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RC4.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RSAKey.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RSAKey.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_TripleDES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_TripleDES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_AES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_AES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_RC4.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_RC4.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_RSAKey.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/Python_RSAKey.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/RC4.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/RC4.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/RSAKey.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/RSAKey.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/TripleDES.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/TripleDES.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/cipherfactory.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/cipherfactory.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/codec.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/codec.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/compat.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/compat.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/cryptomath.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/cryptomath.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/dateFuncs.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/dateFuncs.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/hmac.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/hmac.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/jython_compat.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/jython_compat.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/keyfactory.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/keyfactory.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/rijndael.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/rijndael.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/xmltools.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/tlslite/utils/xmltools.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/urlfetch.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/urlfetch.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/webmastertools/service.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/__init__.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/__init__.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/client.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/client.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/data.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/data.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/service.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/gdata/youtube/service.pyc</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="App Engine server.Travsocio">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -416,23 +904,29 @@
       <created>1385105255433</created>
       <updated>1385105255433</updated>
     </task>
+    <task id="LOCAL-00001" summary="Places API">
+      <created>1386332847028</created>
+      <updated>1386332847028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="158" y="47" width="1260" height="688" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21031746" sideWeight="0.6728499" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21031746" sideWeight="0.67116356" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -449,6 +943,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Places API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Places API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -539,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="556" selection-end="556" vertical-scroll-proportion="0.7185629" vertical-offset="0" max-vertical-offset="1545">
+        <state line="5" column="27" selection-start="155" selection-end="155" vertical-scroll-proportion="0.22522523" vertical-offset="0" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>
