@@ -18,18 +18,19 @@ FACEBOOK_APP_ID = '1426929370852106'
 FACEBOOK_APP_SECRET = '2158fd034e3235b417de3e55bd6df0c9'
 FOURSQUARE_CLIENT_ID = 'RO5GG3FDPEEPNGCVQ3DQVNDG3HEFXAW1R5NMGMTLQA0VROV0'
 FOURSQUARE_CLIENT_SECRET = 'UX35D0GPQW4T3Q2QTT4DMV5XVTEN2YAYMKMWVFYI0XUOAWAN'
+GOOGLE_API_KEY = 'AIzaSyAQhPtv1ef2PKLoYK9swqQEp-dBh7rIaHc'
 
 import facebook
 import webapp2
 import os
 import jinja2
 import urllib2
-import pyfoursquare as foursquare
 import wikipedia
 
 
 from google.appengine.ext import db
 from webapp2_extras import sessions
+from googleplaces import GooglePlaces, lang, types
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -128,18 +129,34 @@ class BaseHandler(webapp2.RequestHandler):
 
 class HomeHandler(BaseHandler):
     def get(self):
+
+        user_agent_string = self.request.headers['user-agent']
+
+        print user_agent_string
+
         template = jinja_environment.get_template('_base.html')
 
         # wiki api link: https://github.com/goldsmith/Wikipedia#
 
         ny = wikipedia.page('Allahabad')
 
+        # google places api -- > https://github.com/slimkrazy/python-google-places
+        google_places = GooglePlaces(GOOGLE_API_KEY)
 
+        query = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
+
+        #if query.has_attributions:
+         #   print query.html_attributions
+
+        #for place in query.places:
+         #   print str(place.name)
+          #  print str(place.geo_location)
 
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=self.current_user,
-            summary=ny.summary
+            summary=ny.summary,
+            uas=user_agent_string
         )))
 
     def post(self):
