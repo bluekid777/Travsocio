@@ -25,26 +25,18 @@ import webapp2
 import os
 import jinja2
 import urllib2
-import wikipedia
+#import wikipedia
+import logging
 
 
-from google.appengine.ext import db
+from Models import User
 from webapp2_extras import sessions
 from googleplaces import GooglePlaces, lang, types
+from Models import Friend
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
 
-
-class User(db.Model):
-    id = db.StringProperty(required=True)
-    created = db.DateTimeProperty(auto_now_add=True)
-    updated = db.DateTimeProperty(auto_now=True)
-    name = db.StringProperty(required=True)
-    profile_url = db.StringProperty(required=True)
-    access_token = db.StringProperty(required=True)
-    bio = db.StringProperty(required=True)
-    city = db.StringProperty(required=True)
 
 
 class BaseHandler(webapp2.RequestHandler):
@@ -83,7 +75,6 @@ class BaseHandler(webapp2.RequestHandler):
                         name=profile["name"],
                         profile_url=profile["link"],
                         access_token=cookie["access_token"],
-                        bio = profile["bio"],
                         city = city["name"]
                     )
                     print user.access_token
@@ -96,9 +87,7 @@ class BaseHandler(webapp2.RequestHandler):
                     name=user.name,
                     profile_url=user.profile_url,
                     id=user.id,
-                    access_token=user.access_token,
-                    bio=user.bio,
-                    city=user.city
+                    access_token=user.access_token
                 )
                 return self.session.get("user")
         return None
@@ -136,14 +125,19 @@ class HomeHandler(BaseHandler):
 
         template = jinja_environment.get_template('_base.html')
 
+
         # wiki api link: https://github.com/goldsmith/Wikipedia#
 
-        ny = wikipedia.page('Allahabad')
+        #ny = wikipedia.page('Allahabad')
 
         # google places api -- > https://github.com/slimkrazy/python-google-places
-        google_places = GooglePlaces(GOOGLE_API_KEY)
+        #google_places = GooglePlaces(GOOGLE_API_KEY)
 
-        query = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
+        #query = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
+
+        friend = Friend(id='1231231', name='ankur', latitude='82.7', longitude='62.3')
+
+        print friend.get_location()
 
         #if query.has_attributions:
          #   print query.html_attributions
@@ -155,7 +149,7 @@ class HomeHandler(BaseHandler):
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=self.current_user,
-            summary=ny.summary,
+            #summary=ny.summary,
             uas=user_agent_string
         )))
 
