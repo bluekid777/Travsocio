@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7983102-10d7-402d-964b-768cb7dcedab" name="Default" comment="">
+    <list default="true" id="c7983102-10d7-402d-964b-768cb7dcedab" name="Default" comment="Places API">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
@@ -908,7 +908,11 @@
       <created>1386332847028</created>
       <updated>1386332847028</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Places API">
+      <created>1386333512975</created>
+      <updated>1386333512975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
