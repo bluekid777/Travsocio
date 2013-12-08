@@ -33,6 +33,7 @@ from Models import User
 from webapp2_extras import sessions
 from googleplaces import GooglePlaces, lang, types
 from Models import Friend
+from Models import FacebookDataGraph
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -69,6 +70,17 @@ class BaseHandler(webapp2.RequestHandler):
                     loc = profile["location"]
                     loc_id = loc["id"]
                     city = graph.get_object(loc_id)
+
+                    f = FacebookDataGraph(cookie["access_token"])
+                    f.create_facebook_graph()
+
+                    print f.friends
+
+                    for fb in f.friends:
+                        print fb.id
+                        print fb.name
+                        print fb.current_lat
+
                     user = User(
                         key_name=str(profile["id"]),
                         id=str(profile["id"]),
@@ -123,10 +135,11 @@ class HomeHandler(BaseHandler):
 
         print user_agent_string
 
-        template = jinja_environment.get_template('_base.html')
+        template = jinja_environment.get_template('dhome.html')
 
 
         # wiki api link: https://github.com/goldsmith/Wikipedia#
+        # google image search api :: https://github.com/BirdAPI/Google-Search-API
 
         #ny = wikipedia.page('Allahabad')
 
@@ -135,9 +148,6 @@ class HomeHandler(BaseHandler):
 
         #query = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
 
-        friend = Friend(id='1231231', name='ankur', latitude='82.7', longitude='62.3')
-
-        print friend.get_location()
 
         #if query.has_attributions:
          #   print query.html_attributions

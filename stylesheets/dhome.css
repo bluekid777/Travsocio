@@ -1,0 +1,160 @@
+body{
+    min-width: 1000px;
+	max-width:1024px;
+	margin-top:0px;
+	margin-bottom:0px;
+    margin: auto;
+	height:100%;
+}
+
+#container {
+    min-width: 1024px;
+    min-height: 900px;
+    max-width: 1024;
+    background-color: #FFFFFF;
+}
+
+#header{
+	height: 40px;
+	width: 100%;
+    margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+#header-logo {
+    height: 35px;
+    width: 700px;
+    margin-left: 5px;
+    float: left;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 2px;
+    margin-bottom: 0px;
+}
+
+#header-content {
+    height: 35px;
+    width: 300px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    line-height: 10px;
+    text-align: right;
+    vertical-align: top;
+
+}
+
+#content{
+    width: 100%;
+    border: groove;
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-color: #49A6D8;
+    min-height: 828px;
+}
+
+#input-place {
+    height: 30px;
+    width: 200px;
+    vertical-align: top;
+    font-size: 15px;
+    padding-bottom: 0px ;
+    margin-top: 2px;
+    line-height: 1em;
+    color: #617BA9;
+    text-align: right;
+    font-family: small Arial, sans-serif;
+
+}
+
+#input-interest {
+    height: 30px;
+    width: 200px;
+    vertical-align: top;
+    font-size: 15px;
+    padding-bottom: 0px ;
+    margin-top: 2px;
+    line-height: 1em;
+    color: #617BA9;
+    text-align: right;
+    font-family: small Arial, sans-serif;
+
+}
+
+#main-bar{
+    width: 100%;
+    height: 250px;
+    border: groove;
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-color: #49A6D8;
+}
+
+#profile-pic{
+    height: 250px;
+    width: 22%;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+#map-canvas
+{
+    height: 250px;
+    width: 99%;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#button-find{
+    height: 33px;
+    width: 60px;
+    font-size: 15px;
+    margin-top: 3px;
+    vertical-align: top;
+    background-color: #617BA9;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border-color: #617BA9;
+}
+
+#leftnav{
+    width: 200px;
+    min-height: 828px;
+    float: left;
+    border: groove;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-color: #617BA9;
+}
+
+#rightnav{
+    width: 200px;
+    min-height: 828px;
+    float: right;
+    border: groove;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    border-color: #617BA9;
+}
+
+#footer {
+	height: 35px;
+	width: 100%;
+	bottom: 0;
+	background-color: #FFFFFF;
+	position: relative;
+    text-align: right;
+}

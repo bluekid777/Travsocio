@@ -40,6 +40,9 @@
 </div>
 <div id='status'>
     <div id="button">
+        {% if current_user %}
+        {{ current_user.name }}
+        {% endif %}
         <fb:login-button autologoutlink="true" scope="publish_stream"></fb:login-button>
     </div>
     </div>
@@ -66,16 +69,12 @@
         </div>
     </div>
     <div id="rightmain"><div id='map-canvas'></div></div>
-    <div>{{ summary }}</div>
-    <div>{{ uas }}</div>
  </div>
 <div id='footer'>
     <div id="footerleft"></div>
-    <div id="footerright">
-        TravSocio &copy | 2013
-    </div>
+    <div id="footerright">TravSocio &copy | 2013</div>
 </div>
-    </div>
+</div>
 <script>
       window.fbAsyncInit = function() {
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
@@ -91,7 +90,7 @@
         e.async = true;
         document.getElementById('fb-root').appendChild(e);
       }());
-    </script>
+</script>
 
 </body>
 </html>
