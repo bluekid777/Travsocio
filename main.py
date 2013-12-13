@@ -144,16 +144,26 @@ class HomeHandler(BaseHandler):
         #ny = wikipedia.page('Allahabad')
 
         # google places api -- > https://github.com/slimkrazy/python-google-places
-        #google_places = GooglePlaces(GOOGLE_API_KEY)
+        google_places = GooglePlaces(GOOGLE_API_KEY)
 
-        #query = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
+        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
 
 
-        #if query.has_attributions:
-         #   print query.html_attributions
+        if query_results.has_attributions:
+            print query_results.html_attributions
 
-        #for place in query.places:
-         #   print str(place.name)
+        a = []
+
+        for place in query_results.places:
+            try:
+                print place.name
+                location = place.geo_location
+                lat = location["lat"]
+                lng = location["lng"]
+                print "lat:%s lang:%s" %(lat, lng)
+            except:
+                print " "
+
           #  print str(place.geo_location)
 
         self.response.out.write(template.render(dict(

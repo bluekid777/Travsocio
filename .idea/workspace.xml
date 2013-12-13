@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7983102-10d7-402d-964b-768cb7dcedab" name="Default" comment="New Template">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/dhome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dhome.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/travsocio.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models.py" afterPath="$PROJECT_DIR$/Models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Travsocio.iml" afterPath="$PROJECT_DIR$/.idea/Travsocio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_base.html" afterPath="$PROJECT_DIR$/_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplaces/__init__.py" afterPath="$PROJECT_DIR$/googleplaces/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.yaml" afterPath="$PROJECT_DIR$/app.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/dhome.css" afterPath="$PROJECT_DIR$/stylesheets/dhome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dhome.html" afterPath="$PROJECT_DIR$/dhome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -42,16 +41,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
+            <state line="157" column="16" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0" vertical-offset="1741" max-vertical-offset="3030">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Google_App_Engine_SDK.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml">
+      <file leaf-file-name="types.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/googleplaces/types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="77" column="28" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2130">
               <folding />
             </state>
           </provider>
@@ -60,7 +59,7 @@
       <file leaf-file-name="dhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="19" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="1891" max-vertical-offset="2475">
+            <state line="180" column="0" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0" vertical-offset="2390" max-vertical-offset="3210">
               <folding />
             </state>
           </provider>
@@ -69,10 +68,26 @@
       <file leaf-file-name="dhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="31" selection-start="2046" selection-end="2046" vertical-scroll-proportion="-13.125" vertical-offset="300" max-vertical-offset="1035">
-              <folding>
-                <element signature="tag#script#2;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="26" column="10" selection-start="929" selection-end="929" vertical-scroll-proportion="-10.625" vertical-offset="135" max-vertical-offset="1290">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="travsocio.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascripts/travsocio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="820">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,10 +95,8 @@
       <file leaf-file-name="Models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="33" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1980">
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state line="85" column="37" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0" vertical-offset="1160" max-vertical-offset="1980">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,16 +104,7 @@
       <file leaf-file-name="facebook.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="8295">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Slides-SlidesJS-3/examples/standard/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="-2.5416667" vertical-offset="1814" max-vertical-offset="2670">
+            <state line="61" column="0" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="8430">
               <folding />
             </state>
           </provider>
@@ -124,30 +128,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/foursquare.py" />
-        <option value="$PROJECT_DIR$/oauth.py" />
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/facebook.py" />
         <option value="$PROJECT_DIR$/wikiapi.py" />
         <option value="$PROJECT_DIR$/wikipedia/wikipedia.py" />
         <option value="/usr/local/google_appengine/google/appengine/tools/devappserver2/python/sandbox_test.py" />
         <option value="$PROJECT_DIR$/pwd.py" />
         <option value="/usr/local/google_appengine/google/appengine/tools/devappserver2/python/sandbox.py" />
-        <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/_base.html" />
         <option value="$PROJECT_DIR$/stylesheets/base.css" />
-        <option value="$PROJECT_DIR$/dhome.html" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
+        <option value="$PROJECT_DIR$/Models.py" />
+        <option value="$PROJECT_DIR$/googleplaces/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/stylesheets/dhome.css" />
         <option value="$PROJECT_DIR$/app.yaml" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/javascripts/travsocio.js" />
+        <option value="$PROJECT_DIR$/dhome.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="512" />
-    <option name="y" value="166" />
-    <option name="width" value="864" />
-    <option name="height" value="874" />
+    <option name="x" value="473" />
+    <option name="y" value="47" />
+    <option name="width" value="1213" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -175,7 +179,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,44 +207,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings module-name="Travsocio" is-module-sdk="true">
+      <PyConsoleSettings>
         <option name="myUseModuleSdk" value="true" />
         <option name="myModuleName" value="Travsocio" />
-      </console-settings>
+      </PyConsoleSettings>
     </option>
   </component>
   <component name="RecentsManager">
@@ -302,6 +292,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Travsocio" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,22 +330,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Travsocio" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,9 +345,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -381,6 +368,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -477,7 +467,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="512" y="166" width="864" height="874" extended-state="0" />
+    <frame x="473" y="47" width="1213" height="969" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,11 +475,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16992664" sideWeight="0.67241377" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12158809" sideWeight="0.67241377" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32714617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32830626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -515,21 +505,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wikipedia/wikipedia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.029013539" vertical-offset="0" max-vertical-offset="7020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pwd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="28" selection-start="4814" selection-end="4814" vertical-scroll-proportion="5.0660377" vertical-offset="0" max-vertical-offset="2775" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/netrc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requests/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="-0.08876812" vertical-offset="334" max-vertical-offset="8820" />
@@ -540,83 +515,94 @@
         <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="33" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1980">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3540">
-          <folding />
-        </state>
+        <state line="221" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="9" selection-start="2750" selection-end="3447" vertical-scroll-proportion="0.7285068" vertical-offset="1058" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="92" column="9" selection-start="2750" selection-end="3447" vertical-scroll-proportion="0.7285068" vertical-offset="1058" max-vertical-offset="1530" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dhome.html">
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="31" selection-start="2046" selection-end="2046" vertical-scroll-proportion="-13.125" vertical-offset="300" max-vertical-offset="1035">
-          <folding>
-            <element signature="tag#script#2;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="19" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="1891" max-vertical-offset="2475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="213" selection-end="213" vertical-scroll-proportion="0.43841335" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Slides-SlidesJS-3/source/jquery.slides.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="24" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.50340134" vertical-offset="1068" max-vertical-offset="9060">
-          <folding />
-        </state>
+        <state line="35" column="5" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.6287425" vertical-offset="0" max-vertical-offset="835" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="8295">
+        <state line="61" column="0" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="8295">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Slides-SlidesJS-3/examples/standard/index.html">
+    <entry file="file://$PROJECT_DIR$/googleplaces/ranking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="2771" selection-end="2771" vertical-scroll-proportion="-2.5416667" vertical-offset="1814" max-vertical-offset="2670">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplaces/lang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="37" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
+        <state line="157" column="16" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0" vertical-offset="1741" max-vertical-offset="3030">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml">
+    <entry file="file://$PROJECT_DIR$/googleplaces/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+        <state line="274" column="8" selection-start="11194" selection-end="11283" vertical-scroll-proportion="0.0" vertical-offset="7965" max-vertical-offset="10665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleplaces/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="28" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2130">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="0" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0" vertical-offset="2390" max-vertical-offset="3210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="929" selection-end="929" vertical-scroll-proportion="-10.625" vertical-offset="135" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/travsocio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
           <folding />
         </state>
       </provider>

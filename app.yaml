@@ -14,6 +14,9 @@ handlers:
 - url: /themes
   static_dir: themes
 
+- url: /javascripts
+  static_dir: javascripts
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico

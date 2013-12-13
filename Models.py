@@ -83,6 +83,7 @@ class FacebookDataGraph (db.Model):
             else:
                 home = ''
             if friend.has_key("location"):
+                print "location found"
                 current = friend["location"]
             else:
                 current = ""

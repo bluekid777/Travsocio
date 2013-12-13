@@ -5,6 +5,7 @@
     <title>Travsocio</title>
 </head>
 <body>
+    <script src="/javascripts/travsocio.js"></script>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -34,13 +35,15 @@
             <div id="header-logo">
                 <img height="35px" width="170px" src="static/logo.png"/>
                 <input id="input-place" placeholder="Dresden, Germany"/>
-                <input id="input-interest" placeholder="Food & Fun"/>
+                <label>
+                    {% choice = [  ] %}
+                    <select>
+
+                    </select>
+                </label>
                 <input type="button" id="button-find" value="Find"/>
             </div>
             <div id="header-content">
-                {% if current_user %}
-                    <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
-                {% endif %}
                 <fb:login-button height="50px" autologoutlink="true" scope="publish_stream"></fb:login-button>
             </div>
         </div>
@@ -50,6 +53,10 @@
         <div id="content">
             <div id="leftnav"></div>
             <div id="rightnav"></div>
+            {% if current_user %}
+                    <p>{{ uas }}</p>
+                    <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+            {% endif %}
         </div>
         <div id="footer">&copy Copyrights TravSocio 2013</div>
     </div>

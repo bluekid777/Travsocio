@@ -567,7 +567,7 @@ class Place(object):
     def name(self):
         """Returns the human-readable name of the place."""
         if self._name == '' and self.details != None and 'name' in self.details:
-        	self._name = self.details['name']
+            self._name = self.details['name']
         return self._name
 
     @property
@@ -578,7 +578,7 @@ class Place(object):
         results.
         """
         if self._vicinity == '' and self.details != None and 'vicinity' in self.details:
-        	self._vicinity = self.details['vicinity']
+            self._vicinity = self.details['vicinity']
         return self._vicinity
 
     @property
