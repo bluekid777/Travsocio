@@ -8,19 +8,12 @@
 
   <!-- SlidesJS Optional: If you'd like to use this design -->
   <style>
-    body {
-      -webkit-font-smoothing: antialiased;
-      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #232525;
-      padding-top:70px;
-    }
-
     #slides {
       display: none
     }
 
     #slides .slidesjs-navigation {
-      margin-top:3px;
+      margin-top:0px;
     }
 
     #slides .slidesjs-previous {
@@ -87,10 +80,13 @@
     }
 
     .container {
-      margin: 0 auto
+      margin: 0 auto;
+      width: 60%;
+      height: 380px;
+      float: left;
     }
 
-    /* For tablets & smart phones */
+    /* For tablets & smart phones
     @media (max-width: 767px) {
       body {
         padding-left: 20px;
@@ -99,28 +95,28 @@
       .container {
         width: auto
       }
-    }
+    }*/
 
-    /* For smartphones */
+    /* For smartphones
     @media (max-width: 480px) {
       .container {
         width: auto
       }
-    }
+    }*/
 
     /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
+    @media (min-width: 400px) and (max-width: 400px) {
       .container {
-        width: 724px
+        width: 380px
       }
     }
 
-    /* For larger displays */
+    /* For larger displays
     @media (min-width: 1200px) {
       .container {
         width: 1170px
       }
-    }
+    }*/
   </style>
     <title>Travsocio</title>
 </head>
@@ -155,32 +151,42 @@
             <div id="header-logo">
                 <img height="35px" width="170px" src="static/logo.png"/>
                 <input id="input-place" placeholder="Dresden, Germany"/>
+                <input type="button" id="button-find" value="Find"/>
+            </div>
+            <div id="header-content">
+                <div id="fb-image">
+                {% if current_user %}
+                    <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                {% endif %}
+                    <div id="fb-name">
+                        {% if current_user %}
+                        {{ current_user.name }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div id="fb-button">
+                    <fb:login-button height="50px" autologoutlink="true" scope="publish_stream"></fb:login-button>
+                </div>
+            </div>
+        </div>
+        <div id="main-bar">
                 <div class="container">
                     <div id="slides">
                       <img src="static/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
                       <img src="static/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
                       <img src="static/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
                       <img src="static/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+                      <img src="http://www.jm-agency.cz/originaly/kategorie/152_163_original.jpg">
                       <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
                       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
                     </div>
                 </div>
-                <input type="button" id="button-find" value="Find"/>
-            </div>
-            <div id="header-content">
-                <fb:login-button height="50px" autologoutlink="true" scope="publish_stream"></fb:login-button>
-            </div>
-        </div>
-        <div id="main-bar">
                 <div id="map-canvas"></div>
             </div>
         <div id="content">
             <div id="leftnav"></div>
             <div id="rightnav"></div>
-            {% if current_user %}
-                    <p>{{ uas }}</p>
-                    <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
-            {% endif %}
+             <p>{{ uas }}</p>
         </div>
         <div id="footer">&copy Copyrights TravSocio 2013</div>
     </div>
@@ -196,9 +202,9 @@
       <script>
         $(function() {
           $('#slides').slidesjs({
-            width: 540,
-            height: 228,
-            navigation: false
+            width: 600,
+            height: 300,
+            navigation: true
           });
         });
       </script>
