@@ -152,17 +152,32 @@ class HomeHandler(BaseHandler):
         if query_results.has_attributions:
             print query_results.html_attributions
 
-        a = []
+        locname = []
+        loclat = []
+        loclong = []
+        marker = ""
 
         for place in query_results.places:
             try:
-                print place.name
+                n = str(place.name)
                 location = place.geo_location
                 lat = location["lat"]
                 lng = location["lng"]
-                print "lat:%s lang:%s" %(lat, lng)
+                locname.append(n)
+                loclat.append(lat)
+                loclong.append(lng)
             except:
                 print " "
+
+        for i in range(len(locname)):
+            marker += locname[i]
+            marker += ": "
+            marker += str(loclat[i])
+            marker += ", "
+            marker += str(loclong[i])
+            marker += "; "
+
+        print marker
 
           #  print str(place.geo_location)
 
@@ -170,7 +185,8 @@ class HomeHandler(BaseHandler):
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=self.current_user,
             #summary=ny.summary,
-            uas=user_agent_string
+            uas=user_agent_string,
+            markers=marker
         )))
 
     def post(self):

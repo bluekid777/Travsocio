@@ -218,3 +218,20 @@ body{
     width: 40px;
     float: left;
 }
+
+#select {
+    width: 200px;
+    height: 35px;
+    max-height: 100px;
+    overflow: scroll;
+    overflow-style: scrollbar;
+    vertical-align: top;
+    font-size: 15px;
+    padding-top: 4px ;
+    margin-top: 3px;
+    line-height: 1em;
+    color: #617BA9;
+    text-align: left;
+    font-family: small Arial, sans-serif;
+
+}
