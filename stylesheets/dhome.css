@@ -1,3 +1,9 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 body{
     min-width: 1200px;
 	max-width:1200px;
@@ -14,7 +20,7 @@ body{
     background-color: #FFFFFF;
 }
 
-#header{
+#header-main{
 	height: 40px;
 	width: 100%;
     margin: 0px;
@@ -25,14 +31,21 @@ body{
 }
 
 #header-logo {
+    vertical-align: top;
     height: 35px;
     width: 700px;
     margin-left: 5px;
     float: left;
     text-align: left;
     font-size: 30px;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     margin-bottom: 0px;
+}
+
+#logo {
+    height: 35px;
+    width: 170px;
+    vertical-align: top;
 }
 
 #fb-button{
@@ -41,6 +54,7 @@ body{
     float: right;
     vertical-align: top;
     margin-top: 9px;
+    text-align: right;
 }
 
 #fb-image {
@@ -219,19 +233,15 @@ body{
     float: left;
 }
 
-#select {
+#options {
+    height: 30px;
     width: 200px;
-    height: 35px;
-    max-height: 100px;
-    overflow: scroll;
-    overflow-style: scrollbar;
     vertical-align: top;
     font-size: 15px;
-    padding-top: 4px ;
-    margin-top: 3px;
+    padding-bottom: 0px ;
+    margin-top: 2px;
     line-height: 1em;
     color: #617BA9;
-    text-align: left;
+    text-align: right;
     font-family: small Arial, sans-serif;
-
 }

@@ -17,6 +17,9 @@ handlers:
 - url: /themes
   static_dir: themes
 
+- url: /fonts
+  static_dir: fonts
+
 - url: /javascripts
   static_dir: javascripts
 

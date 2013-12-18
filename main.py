@@ -177,7 +177,6 @@ class HomeHandler(BaseHandler):
             marker += str(loclong[i])
             marker += "; "
 
-        print marker
 
           #  print str(place.geo_location)
 
