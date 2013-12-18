@@ -146,7 +146,7 @@ class HomeHandler(BaseHandler):
         # google places api -- > https://github.com/slimkrazy/python-google-places
         google_places = GooglePlaces(GOOGLE_API_KEY)
 
-        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='Museums',radius=20000, types=[types.TYPE_MUSEUM])
+        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
 
 
         if query_results.has_attributions:

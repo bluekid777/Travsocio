@@ -155,8 +155,22 @@
     }*/
 
   </style>
-
     <title>Travsocio</title>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript">
+	function check_location () {
+	var geocoder = new google.maps.Geocoder ();
+	var address = document.getElementById("input-place").value;
+	geocoder.geocode( { 'address': address}, function(check_results, check_status) {
+	if (check_status == google.maps.GeocoderStatus.OK) {
+		alert ('cool')
+		//place your code instead of "alert ('cool')"
+    } else {
+      alert('Requested location could not be found for the following reason: ' + check_status);
+    }
+  });
+}
+</script>
 </head>
 <body>
     <script src="/javascripts/travsocio.js"></script>
@@ -174,56 +188,92 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQhPtv1ef2PKLoYK9swqQEp-dBh7rIaHc&sensor=true">
     </script>
     <script type="text/javascript">
-      //just assign another value for the input string (from your file, it should work)
-        function initialize() {
-            var input_string = "{{ markers }}"
-            var location_name_array = []
-            var location_lat_array = []
-            var location_lng_array = []
-            var bounds = new google.maps.LatLngBounds();
-            var you_infowindow = new google.maps.InfoWindow();
-            location_array = input_string.split(/;/)
-            for (i = 0; i < location_array.length-1; i++) {
-                tmp_name_and_location = location_array[i].split(/:/)
-                location_name_array[i] = tmp_name_and_location[0]
-                tmp_lat_and_long = tmp_name_and_location[1].split(/\,/)
-                location_lat_array [i] = tmp_lat_and_long[0]
-                location_lng_array [i] = tmp_lat_and_long[1]
-                }
-            var location_lat_lng = new google.maps.LatLng (location_lat_array[0], location_lng_array[0])
-            bounds.extend(location_lat_lng)
-            var mapOptions = {
-                center: location_lat_lng,
-                zoom: 11
-            };
-            map = new google.maps.Map(document.getElementById("map-canvas"),
-                mapOptions);
-            var you_marker = new google.maps.Marker ({
-                position: location_lat_lng,
-                map: map,
-                title: location_name_array[0]
-            });
-            you_infowindow.setContent ('You')
-            you_infowindow.open (map, you_marker)
-            for (i = 1; i < location_array.length-1; i++)	{
-                var place_lat_lng = new google.maps.LatLng (parseFloat(location_lat_array[i]), parseFloat(location_lng_array[i]))
-                bounds.extend(place_lat_lng)
-                var marker = new google.maps.Marker ({
-                    position: place_lat_lng,
-                    map: map,
-                    title: location_name_array[i]
-                });
-            }
-	        map.fitBounds(bounds);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize)
+var location_string = "You : 51.0293767, 13.749075100000027"
+var my_name = ''
+var my_lat = ''
+var my_lng = ''
+var my_infowindow = new google.maps.InfoWindow();
+var search_string_for_wiki = '';
+function initialize() {
+	if (navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(function(position) {
+			my_lat = position.coords.latitude;
+			my_lng = position.coords.longitude;
+			my_name = 'You'
+            further();
+		});
+	} else {
+		tmp_name_and_location = location_string.split(/:/)
+		my_name = tmp_name_and_location[0]
+		tmp_lat_and_long = tmp_name_and_location[1].split(/\,/)
+		my_lat = tmp_lat_and_long[0]
+		my_lng = tmp_lat_and_long[1]
+		further();
+	}
+}
+function further () {
+	var my_lat_lng = new google.maps.LatLng (parseFloat (my_lat), parseFloat (my_lng))
+	var mapOptions = {
+        center: my_lat_lng,
+        zoomControl: true,
+        zoom: 16
+    };
+	var map = new google.maps.Map(document.getElementById("map-canvas"),
+        mapOptions);
+	var marker_me = new google.maps.Marker ({
+		position: my_lat_lng,
+		map: map,
+		title: my_name
+	});
+	geocoder = new google.maps.Geocoder();
+	geocoder.geocode({'latLng': my_lat_lng}, function(results, status) {
+		if (status == google.maps.GeocoderStatus.OK) {
+			if (results[1]) {
+//it is just city name in Windows, but Ubuntu returns also POstCode - index
+				search_string_and_index = results[1].formatted_address.split(/\,/)[1];
+                //search_string_for_wiki is the variable you can use
+				search_string_for_wiki = search_string_and_index.replace(/[0-9]+/, "")
+				my_infowindow.setContent('You are here');
+				my_infowindow.open(map, marker_me);
+			} else {
+				alert('No results found');
+			}
+		} else {
+			alert('Geocoder failed due to: ' + status);
+		}
+	});
+    var input_string = "{{ markers }}"
+    var bounds = new google.maps.LatLngBounds();
+    var location_name_array = []
+	var location_lat_array = []
+	var location_lng_array = []
+    var location_array = input_string.split(/;/);
+	for (i = 0; i < location_array.length-1; i++) {
+		tmp_name_and_location = location_array[i].split(/:/);
+		location_name_array[i] = tmp_name_and_location[0];
+		tmp_lat_and_long = tmp_name_and_location[1].split(/\,/);
+		location_lat_array [i] = tmp_lat_and_long[0];
+		location_lng_array [i] = tmp_lat_and_long[1];
+		}
+    for (i = 0; i < location_array.length-1; i++)	{
+		var place_lat_lng = new google.maps.LatLng (parseFloat(location_lat_array[i]), parseFloat(location_lng_array[i]))
+	    bounds.extend(place_lat_lng)
+		var marker = new google.maps.Marker ({
+			position: place_lat_lng,
+			map: map,
+			title: location_name_array[i]
+		});
+	}
+	map.fitBounds(bounds)
+}
+google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     <div id="container">
         <div id="header-main">
             <div id="header-logo">
                 <img id="logo" height="35px" width="170px" src="static/logo.png"/>
-                <input id="input-place" placeholder="Dresden, Germany"/>
-                <input type="button" id="button-find" value="Find"/>
+                <input id="input-place" placeholder="Dresden, Germany" onchange="check_location()"/>
+                <input type="button" id="button-find" value="Find" onclick ="check_location()"/>
             </div>
             <div id="header-content">
                 <div id="fb-image">
