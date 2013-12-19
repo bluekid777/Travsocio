@@ -26,18 +26,16 @@ class Place(db.Model):
 class Friend(db.Model):
     id = db.StringProperty(required=True)
     name = db.StringProperty(required=True)
+    username = db.StringProperty(required=True)
     current_lat = db.StringProperty()
     current_long = db.StringProperty()
-    home_lat = db.StringProperty()
-    home_long = db.StringProperty()
 
-    def __init__(self, id, name, current_lat='', current_long='', home_lat='', home_long=''):
+    def __init__(self, id, name, username, current_lat='', current_long=''):
         self.id = id
         self.name = name
         self.current_lat = current_lat
         self.current_long = current_long
-        self.home_lat = home_lat
-        self.home_long = home_long
+        self.username = username
 
     def get_current_location(self):
         if not self.current_lat == '':
@@ -76,39 +74,18 @@ class FacebookDataGraph (db.Model):
         friends = graph.get_object("me/friends")
         friend_list = friends["data"]
         for friend in friend_list:
-            fid = friend["id"]
-            fname = friend["name"]
-            if friend.has_key("hometown"):
-                home = friend["hometown"]
-            else:
-                home = ''
-            if friend.has_key("location"):
-                print "location found"
-                current = friend["location"]
-            else:
-                current = ""
 
-            home_lat = ''
-            home_long = ''
-            current_lat = ''
-            current_long = ''
+            detail = graph.get_object(friend["id"])
 
-            if not home == '':
-                l = graph.get_object(home["id"])
-                home_location = l["location"]
-                home_lat = home_location["latitude"]
-                home_long = home_location["longitude"]
-
-
-            if not current == '':
-                l = graph.get_object(current["id"])
-                home_location = l["location"]
-                current_lat = home_location["latitude"]
-                current_long = home_location["longitude"]
-
-            f = Friend(id=fid, name=fname, current_lat=current_lat, current_long=current_long, home_lat=home_lat, home_long=home_long)
-
-            self.friends.append(f)
+            if detail.has_key("username"):
+                print "Gotcha"
+                id = detail["id"]
+                name = detail["name"]
+                username = detail["username"]
+                f = Friend(id=id, name=name, username=username, current_lat="", current_long="")
+                self.friends.append(f)
+                if len(self.friends) > 15:
+                        break;
 
 
 

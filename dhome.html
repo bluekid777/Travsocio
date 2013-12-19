@@ -1,44 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="stylesheets/example.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/dhome.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-    <script>
-  $(function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  });
-  </script>
+    <script type="text/javascript">
+        $(init);
+        function init() {
+        $('#leftnav','#rightnav').css('height',($('body').height() - 465) + 'px');
+        }
+    </script>
 
   <!-- End CSS for slidesjs.com example -->
 
@@ -100,7 +71,7 @@
 
     #slides a:hover,
     #slides a:active {
-      color: #9e2020
+      color: #617BA9
     }
 
     .navbar {
@@ -273,16 +244,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
             <div id="header-logo">
                 <img id="logo" height="35px" width="170px" src="static/logo.png"/>
                 <input id="input-place" placeholder="Dresden, Germany" onchange="check_location()"/>
+                <input id="input-interest" placeholder="Hotels"/>
                 <input type="button" id="button-find" value="Find" onclick ="check_location()"/>
             </div>
             <div id="header-content">
                 <div id="fb-image">
                 {% if current_user %}
                     <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                {% else %}
+                    <img src="static/user.png" height="30" width="30">
                 {% endif %}
                     <div id="fb-name">
                         {% if current_user %}
                         {{ current_user.name }}
+                        {% else %}
+                        Guest User
                         {% endif %}
                     </div>
                 </div>
@@ -306,13 +282,46 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 <div id="map-canvas"></div>
             </div>
         <div id="content">
-            <div id="leftnav"></div>
-            <div id="rightnav"></div>
-            <div class="ui-widget">
-              <label for="tags">Tags: </label>
-              <input id="tags">
+            <div id="leftnav">
+                <a href="">Create Event</a></br>
+                <a href="">Share experience</a></br>
+                <a href="">Get weather details</a></br>
+                <a href="">Find nearby friends</a></br>
+                <a href="">How to reach here?</a>
             </div>
-             <p>{{ uas }}</p>
+            <div id="rightnav">
+                {% if current_user %}
+                <fieldset id="invite-friends">
+                    <legend align="left">Invite Friends</legend>
+                    <div id="friend-bar">
+                        {% for f in friends %}
+                            <p><img src="https://graph.facebook.com/{{ f.username }}/picture?width=30&height=30"><a href="">{{ f.name }}</a></p>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+                {% endif %}
+            </div>
+             <div id="wiki-content">
+                 {{ summary }}  <a href="wikipedia.com">Wikipedia..</a>
+             </div>
+             <fieldset id="comment-box">
+                 <legend align="left">Comments</legend>
+                 <div id="previous-comment">
+                     <a href=""><img src="http://graph.facebook.com/ankur.tud/picture?width=30&height=30"/></a>
+
+                     Dresden is awesome !!!
+                 </div>
+                 <div id="new-comment">
+                 {% if current_user %}
+                    <a href="{{ current_user.profile_url }}"><img src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                 {% else %}
+                    <img src="static/user.png" height="30" width="30">
+                 {% endif %}
+
+                        <textarea id="new-textarea" draggable="false" placeholder="Type your comment here...."></textarea>
+                        <input type="submit" id="comment-submit" value="Save">
+                     </div>
+             </fieldset>
         </div>
         <div id="footer">&copy Copyrights TravSocio 2013</div>
     </div>

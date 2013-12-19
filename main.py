@@ -19,13 +19,14 @@ FACEBOOK_APP_SECRET = '2158fd034e3235b417de3e55bd6df0c9'
 FOURSQUARE_CLIENT_ID = 'RO5GG3FDPEEPNGCVQ3DQVNDG3HEFXAW1R5NMGMTLQA0VROV0'
 FOURSQUARE_CLIENT_SECRET = 'UX35D0GPQW4T3Q2QTT4DMV5XVTEN2YAYMKMWVFYI0XUOAWAN'
 GOOGLE_API_KEY = 'AIzaSyAQhPtv1ef2PKLoYK9swqQEp-dBh7rIaHc'
+F = None
 
 import facebook
 import webapp2
 import os
 import jinja2
 import urllib2
-#import wikipedia
+import wikipedia
 import logging
 
 
@@ -70,16 +71,6 @@ class BaseHandler(webapp2.RequestHandler):
                     loc = profile["location"]
                     loc_id = loc["id"]
                     city = graph.get_object(loc_id)
-
-                    f = FacebookDataGraph(cookie["access_token"])
-                    f.create_facebook_graph()
-
-                    print f.friends
-
-                    for fb in f.friends:
-                        print fb.id
-                        print fb.name
-                        print fb.current_lat
 
                     user = User(
                         key_name=str(profile["id"]),
@@ -141,13 +132,15 @@ class HomeHandler(BaseHandler):
         # wiki api link: https://github.com/goldsmith/Wikipedia#
         # google image search api :: https://github.com/BirdAPI/Google-Search-API
 
-        #ny = wikipedia.page('Allahabad')
+        ny = wikipedia.page('Dresden')
 
         # google places api -- > https://github.com/slimkrazy/python-google-places
         google_places = GooglePlaces(GOOGLE_API_KEY)
 
         query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
 
+
+        cu = self.current_user
 
         if query_results.has_attributions:
             print query_results.html_attributions
@@ -177,15 +170,31 @@ class HomeHandler(BaseHandler):
             marker += str(loclong[i])
             marker += "; "
 
+        friend_list = []
 
+        if cu:
+            f = FacebookDataGraph(cu["access_token"])
+            f.create_facebook_graph()
+
+            for fr in f.friends:
+                try:
+                    friend_list.append(dict(name=fr.name,
+                                            id=fr.id,
+                                            username=fr.username
+                                            ))
+                except:
+                    print ""
+
+        print friend_list
           #  print str(place.geo_location)
 
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
-            current_user=self.current_user,
-            #summary=ny.summary,
+            current_user=cu,
+            summary=ny.summary,
             uas=user_agent_string,
-            markers=marker
+            markers=marker,
+            friends=friend_list
         )))
 
     def post(self):
