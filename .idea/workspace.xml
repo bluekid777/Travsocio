@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc902a26-d95b-4a3d-82e9-c601c2c2ba42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/user.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models.py" afterPath="$PROJECT_DIR$/Models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Travsocio.iml" afterPath="$PROJECT_DIR$/.idea/Travsocio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/dhome.css" afterPath="$PROJECT_DIR$/stylesheets/dhome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dhome.html" afterPath="$PROJECT_DIR$/dhome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/example.css" afterPath="$PROJECT_DIR$/stylesheets/example.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +15,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1387441613011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1388408247621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -38,21 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="46" selection-start="6203" selection-end="6203" vertical-scroll-proportion="0.0" vertical-offset="2685" max-vertical-offset="3450">
-              <folding>
-                <element signature="e#916#931#0" expanded="true" />
-              </folding>
+            <state line="217" column="13" selection-start="7230" selection-end="7230" vertical-scroll-proportion="1.5425532" vertical-offset="2335" max-vertical-offset="3435">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dhome.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="289" column="45" selection-start="9388" selection-end="9388" vertical-scroll-proportion="0.37644342" vertical-offset="4172" max-vertical-offset="5535">
+            <state line="289" column="45" selection-start="9388" selection-end="9388" vertical-scroll-proportion="-6.7916665" vertical-offset="4172" max-vertical-offset="5535">
               <folding />
             </state>
           </provider>
@@ -61,7 +50,7 @@
       <file leaf-file-name="example.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/example.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1709" column="18" selection-start="41921" selection-end="41921" vertical-scroll-proportion="0.0" vertical-offset="25435" max-vertical-offset="26130">
+            <state line="1709" column="18" selection-start="41921" selection-end="41921" vertical-scroll-proportion="0.0" vertical-offset="25635" max-vertical-offset="26130">
               <folding />
             </state>
           </provider>
@@ -70,7 +59,7 @@
       <file leaf-file-name="Models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="23" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="1635">
+            <state line="86" column="23" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -79,7 +68,7 @@
       <file leaf-file-name="facebook.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="8295">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8430">
               <folding />
             </state>
           </provider>
@@ -88,7 +77,7 @@
       <file leaf-file-name="dhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="6" selection-start="1720" selection-end="1725" vertical-scroll-proportion="-5.32" vertical-offset="1457" max-vertical-offset="5310">
+            <state line="106" column="6" selection-start="1720" selection-end="1725" vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="5310">
               <folding />
             </state>
           </provider>
@@ -113,16 +102,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/stylesheets/example.css" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/stylesheets/dhome.css" />
         <option value="$PROJECT_DIR$/dhome.html" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="245" />
+    <option name="x" value="489" />
+    <option name="y" value="31" />
     <option name="width" value="1374" />
     <option name="height" value="860" />
   </component>
@@ -170,20 +159,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -192,10 +167,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -311,9 +286,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -335,6 +307,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -393,6 +368,11 @@
       <created>1387435444539</created>
       <updated>1387435444539</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second presentation">
+      <created>1387462911118</created>
+      <updated>1387462911118</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -416,24 +396,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="245" width="1374" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="489" y="31" width="1374" height="860" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17093374" sideWeight="0.671159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17319277" sideWeight="0.671159" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -446,6 +427,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Second presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second presentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -454,9 +437,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="19" selection-start="5183" selection-end="5183" vertical-scroll-proportion="0.0" vertical-offset="2725" max-vertical-offset="3405">
-          <folding>
-            <element signature="e#916#931#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -481,6 +462,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="289" column="45" selection-start="9388" selection-end="9388" vertical-scroll-proportion="-6.7916665" vertical-offset="4172" max-vertical-offset="5535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/example.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1709" column="18" selection-start="41921" selection-end="41921" vertical-scroll-proportion="0.0" vertical-offset="25435" max-vertical-offset="26130">
@@ -495,15 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="46" selection-start="6203" selection-end="6203" vertical-scroll-proportion="0.0" vertical-offset="2685" max-vertical-offset="3450">
-          <folding>
-            <element signature="e#916#931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="8295">
@@ -513,14 +492,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="6" selection-start="1720" selection-end="1725" vertical-scroll-proportion="-5.32" vertical-offset="1457" max-vertical-offset="5310">
+        <state line="106" column="6" selection-start="1720" selection-end="1725" vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="5310">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dhome.html">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="289" column="45" selection-start="9388" selection-end="9388" vertical-scroll-proportion="0.37644342" vertical-offset="4172" max-vertical-offset="5535">
+        <state line="217" column="13" selection-start="7230" selection-end="7230" vertical-scroll-proportion="1.5425532" vertical-offset="2335" max-vertical-offset="3435">
           <folding />
         </state>
       </provider>

@@ -122,10 +122,6 @@ class BaseHandler(webapp2.RequestHandler):
 class HomeHandler(BaseHandler):
     def get(self):
 
-        user_agent_string = self.request.headers['user-agent']
-
-        print user_agent_string
-
         template = jinja_environment.get_template('dhome.html')
 
 
@@ -192,7 +188,6 @@ class HomeHandler(BaseHandler):
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=cu,
             summary=ny.summary,
-            uas=user_agent_string,
             markers=marker,
             friends=friend_list
         )))
@@ -207,6 +202,23 @@ class HomeHandler(BaseHandler):
         self.redirect(str(photo_url))
 
 
+class MobileHandler(BaseHandler):
+    def get(self):
+        print "mobile"
+
+
+class MainHandler(BaseHandler):
+
+    def get(self):
+        user_agent_string = self.request.headers['user-agent']
+        user_agent_string = user_agent_string.lower()
+        print user_agent_string.find("mobile")
+        if user_agent_string.find("mobile") >= 0:
+            self.redirect('/mobile')
+        else:
+            self.redirect('/desk')
+
+
 class LogoutHandler(BaseHandler):
     def get(self):
         if self.current_user is not None:
@@ -219,7 +231,7 @@ jinja_environment = jinja2.Environment(
 )
 
 app = webapp2.WSGIApplication(
-    [('/', HomeHandler), ('/logout', LogoutHandler)],
+    [('/', MainHandler),('/mobile', MobileHandler),('/desk', HomeHandler), ('/logout', LogoutHandler)],
     debug=True,
     config=config
 )
