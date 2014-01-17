@@ -205,7 +205,66 @@ class HomeHandler(BaseHandler):
 class MobileHandler(BaseHandler):
     def get(self):
         template = jinja_environment.get_template('mhome.html')
-        self.response.out.write(template.render())
+
+        ny = wikipedia.page('Dresden')
+
+        google_places = GooglePlaces(GOOGLE_API_KEY)
+
+        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
+
+
+        cu = self.current_user
+
+        if query_results.has_attributions:
+            print query_results.html_attributions
+
+        locname = []
+        loclat = []
+        loclong = []
+        marker = ""
+
+        for place in query_results.places:
+            try:
+                n = str(place.name)
+                location = place.geo_location
+                lat = location["lat"]
+                lng = location["lng"]
+                locname.append(n)
+                loclat.append(lat)
+                loclong.append(lng)
+            except:
+                print " "
+
+        for i in range(len(locname)):
+            marker += locname[i]
+            marker += ": "
+            marker += str(loclat[i])
+            marker += ", "
+            marker += str(loclong[i])
+            marker += "; "
+
+        friend_list = []
+
+        if cu:
+            f = FacebookDataGraph(cu["access_token"])
+            f.create_facebook_graph()
+
+            for fr in f.friends:
+                try:
+                    friend_list.append(dict(name=fr.name,
+                                            id=fr.id,
+                                            username=fr.username
+                                            ))
+                except:
+                    print ""
+
+        self.response.out.write(template.render(dict(
+            facebook_app_id=FACEBOOK_APP_ID,
+            current_user=cu,
+            summary=ny.summary,
+            markers=marker,
+            friends=friend_list
+        )))
 
 
 class MainHandler(BaseHandler):

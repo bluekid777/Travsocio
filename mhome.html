@@ -5,14 +5,49 @@
     <title>Travsocio</title>
 </head>
 <body>
+ <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1426929370852106";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 <div id="container">
     <div id="header">
-    Travsocio
+        <div id="header-menu">TS</div>
+        <div id="header-login">
+            <div id="fbbutton">
+                <div id="fb-button">
+                    <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
+                </div>
+            </div>
+        </div>
     </div>
-    Welcome to mobile page of travsocio
+    <div id="content">
+        Welcome to mobile page of travsocio
+    </div>
     <div id="footer">
         &copy Travsocio Inc
     </div>
 </div>
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
+                 xfbml: true});
+        FB.Event.subscribe('{% if current_user %}auth.logout{% else %}auth.login{% endif %}', function(response) {
+          {% if current_user %} window.location = "/logout" {% else %} window.location.reload(); {% endif %}
+        });
+      };
+      (function() {
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+      }());
+</script>
+
 </body>
 </html>
