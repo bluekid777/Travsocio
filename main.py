@@ -204,7 +204,8 @@ class HomeHandler(BaseHandler):
 
 class MobileHandler(BaseHandler):
     def get(self):
-        print "mobile"
+        template = jinja_environment.get_template('mhome.html')
+        self.response.out.write(template.render())
 
 
 class MainHandler(BaseHandler):
@@ -212,11 +213,10 @@ class MainHandler(BaseHandler):
     def get(self):
         user_agent_string = self.request.headers['user-agent']
         user_agent_string = user_agent_string.lower()
-        print user_agent_string.find("mobile")
         if user_agent_string.find("mobile") >= 0:
             self.redirect('/mobile')
         else:
-            self.redirect('/desk')
+            self.redirect('/home')
 
 
 class LogoutHandler(BaseHandler):
@@ -231,7 +231,7 @@ jinja_environment = jinja2.Environment(
 )
 
 app = webapp2.WSGIApplication(
-    [('/', MainHandler),('/mobile', MobileHandler),('/desk', HomeHandler), ('/logout', LogoutHandler)],
+    [('/', MainHandler),('/mobile', MobileHandler),('/home', HomeHandler), ('/logout', LogoutHandler)],
     debug=True,
     config=config
 )
