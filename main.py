@@ -330,7 +330,7 @@ jinja_environment = jinja2.Environment(
 )
 
 app = webapp2.WSGIApplication(
-    [('/', MainHandler), ('/mobile', MobileHandler), ('/home([^/]+)', HomeHandler), ('/logout', LogoutHandler),
+    [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
      ('/location', LocationHandler)],
     debug=True,
     config=config
