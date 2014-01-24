@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc902a26-d95b-4a3d-82e9-c601c2c2ba42" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/jquery.mmenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/jquery.mmenu.effects.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/jquery.mmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/location_mobile_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Travsocio.iml" afterPath="$PROJECT_DIR$/.idea/Travsocio.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mhome.html" afterPath="$PROJECT_DIR$/mhome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
@@ -14,7 +24,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1390138513236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1389956005767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -28,10 +38,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="11" selection-start="8689" selection-end="8689" vertical-scroll-proportion="0.0" vertical-offset="3852" max-vertical-offset="4320">
+            <state line="318" column="32" selection-start="10176" selection-end="10176" vertical-scroll-proportion="0.6069869" vertical-offset="4019" max-vertical-offset="4935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location_mobile_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="38" selection-start="567" selection-end="567" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -40,34 +59,16 @@
       <file leaf-file-name="mhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="257" column="35" selection-start="7082" selection-end="7082" vertical-scroll-proportion="-5.4583335" vertical-offset="3724" max-vertical-offset="4695">
+            <state line="298" column="70" selection-start="9053" selection-end="9053" vertical-scroll-proportion="-12.166667" vertical-offset="4178" max-vertical-offset="5070">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="732" selection-end="787" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="28" selection-start="985" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="3540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mhome.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="20" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-0.25" vertical-offset="1017" max-vertical-offset="1485">
+            <state line="44" column="21" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -76,25 +77,7 @@
       <file leaf-file-name="dhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="15" selection-start="11129" selection-end="11653" vertical-scroll-proportion="-3.485294" vertical-offset="4923" max-vertical-offset="5535">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="23" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="1650">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8430">
+            <state line="155" column="13" selection-start="3270" selection-end="3651" vertical-scroll-proportion="0.0" vertical-offset="1996" max-vertical-offset="5535">
               <folding />
             </state>
           </provider>
@@ -103,7 +86,7 @@
       <file leaf-file-name="dhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="10" selection-start="2729" selection-end="2730" vertical-scroll-proportion="-3.2045455" vertical-offset="2334" max-vertical-offset="5310">
+            <state line="306" column="30" selection-start="5451" selection-end="5451" vertical-scroll-proportion="0.0" vertical-offset="4214" max-vertical-offset="5310">
               <folding />
             </state>
           </provider>
@@ -130,18 +113,18 @@
         <option value="$PROJECT_DIR$/stylesheets/example.css" />
         <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/dhome.html" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/stylesheets/dhome.css" />
-        <option value="$PROJECT_DIR$/mhome.html" />
         <option value="$PROJECT_DIR$/stylesheets/mhome.css" />
+        <option value="$PROJECT_DIR$/location_mobile_form.html" />
+        <option value="$PROJECT_DIR$/mhome.html" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="107" />
-    <option name="y" value="31" />
-    <option name="width" value="1374" />
-    <option name="height" value="860" />
+    <option name="y" value="25" />
+    <option name="width" value="1528" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,6 +152,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,7 +187,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,15 +195,19 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings />
+      <PyConsoleSettings />
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javascripts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
     </key>
@@ -405,6 +392,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cc902a26-d95b-4a3d-82e9-c601c2c2ba42" name="Default" comment="" />
@@ -419,9 +423,9 @@
       <created>1388409639520</created>
       <updated>1388409639520</updated>
     </task>
-    <task id="LOCAL-00003" summary="MobileLayout - Map + image">
-      <created>1390147347831</created>
-      <updated>1390147347831</updated>
+    <task id="LOCAL-00003" summary="mobile redirect new">
+      <created>1389963828195</created>
+      <updated>1389963828195</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -447,25 +451,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="107" y="31" width="1374" height="860" extended-state="0" />
+    <frame x="0" y="25" width="1528" height="1065" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18147591" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17060368" sideWeight="0.6712619" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -480,27 +484,13 @@
     </option>
     <MESSAGE value="Second presentation" />
     <MESSAGE value="mobile redirect" />
-    <MESSAGE value="MobileLayout - Map + image" />
-    <option name="LAST_COMMIT_MESSAGE" value="MobileLayout - Map + image" />
+    <MESSAGE value="mobile redirect new" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile redirect new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/facebook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="6" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="19" selection-start="5183" selection-end="5183" vertical-scroll-proportion="0.0" vertical-offset="2725" max-vertical-offset="3405">
@@ -534,13 +524,6 @@
         <state line="1709" column="18" selection-start="41921" selection-end="41921" vertical-scroll-proportion="0.0" vertical-offset="25435" max-vertical-offset="26130" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="23" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="8295">
@@ -548,51 +531,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="11" selection-start="8689" selection-end="8689" vertical-scroll-proportion="0.0" vertical-offset="3852" max-vertical-offset="4320">
+        <state line="20" column="11" selection-start="732" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="28" selection-start="985" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="3540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="23" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.6069869" vertical-offset="719" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="10" selection-start="2729" selection-end="2730" vertical-scroll-proportion="-3.2045455" vertical-offset="2334" max-vertical-offset="5310">
+        <state line="306" column="30" selection-start="5451" selection-end="5451" vertical-scroll-proportion="0.0" vertical-offset="4214" max-vertical-offset="5310">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dhome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="15" selection-start="11129" selection-end="11653" vertical-scroll-proportion="-3.485294" vertical-offset="4923" max-vertical-offset="5535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="732" selection-end="787" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="35" selection-start="7082" selection-end="7082" vertical-scroll-proportion="-5.4583335" vertical-offset="3724" max-vertical-offset="4695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="28" selection-start="985" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="3540">
+        <state line="155" column="13" selection-start="3270" selection-end="3651" vertical-scroll-proportion="0.0" vertical-offset="1996" max-vertical-offset="5535">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="20" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-0.25" vertical-offset="1017" max-vertical-offset="1485">
+        <state line="44" column="21" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="298" column="70" selection-start="9053" selection-end="9053" vertical-scroll-proportion="-12.166667" vertical-offset="4178" max-vertical-offset="5070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="38" selection-start="567" selection-end="567" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="318" column="32" selection-start="10176" selection-end="10176" vertical-scroll-proportion="0.6069869" vertical-offset="4019" max-vertical-offset="4935">
           <folding />
         </state>
       </provider>

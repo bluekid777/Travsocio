@@ -203,17 +203,16 @@ class HomeHandler(BaseHandler):
 
 
 class MobileHandler(BaseHandler):
-    def get(self):
+    def get(self, params=""):
         template = jinja_environment.get_template('mhome.html')
 
         ny = wikipedia.page('Dresden')
+        cu = self.current_user
 
         google_places = GooglePlaces(GOOGLE_API_KEY)
 
         query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
 
-
-        cu = self.current_user
 
         if query_results.has_attributions:
             print query_results.html_attributions
@@ -243,6 +242,7 @@ class MobileHandler(BaseHandler):
             marker += str(loclong[i])
             marker += "; "
 
+        marker = self.request.get('marker')
         friend_list = []
 
         if cu:
@@ -265,6 +265,46 @@ class MobileHandler(BaseHandler):
             markers=marker,
             friends=friend_list
         )))
+
+
+class LocationHandler(BaseHandler):
+    def post(self):
+        city = self.request.get('city')
+        category = self.request.get('category')
+
+        google_places = GooglePlaces(GOOGLE_API_KEY)
+        query_results = google_places.nearby_search(location=city, keyword=category, radius=20000)
+
+        if query_results.has_attributions:
+            print query_results.html_attributions
+
+        locname = []
+        loclat = []
+        loclong = []
+        marker = ""
+
+        for place in query_results.places:
+            try:
+                n = str(place.name)
+                location = place.geo_location
+                lat = location["lat"]
+                lng = location["lng"]
+                locname.append(n)
+                loclat.append(lat)
+                loclong.append(lng)
+            except:
+                print " "
+
+        for i in range(len(locname)):
+            marker += locname[i]
+            marker += ": "
+            marker += str(loclat[i])
+            marker += ", "
+            marker += str(loclong[i])
+            marker += "; "
+
+
+            #self.redirect('/mobile/marker=' + marker=)
 
 
 class MainHandler(BaseHandler):
@@ -290,7 +330,8 @@ jinja_environment = jinja2.Environment(
 )
 
 app = webapp2.WSGIApplication(
-    [('/', MainHandler),('/mobile', MobileHandler),('/home', HomeHandler), ('/logout', LogoutHandler)],
+    [('/', MainHandler), ('/mobile', MobileHandler), ('/home([^/]+)', HomeHandler), ('/logout', LogoutHandler),
+     ('/location', LocationHandler)],
     debug=True,
     config=config
 )

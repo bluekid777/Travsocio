@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
+    <!-- jQuerryMmenu. Part 1. Lines for jQuerryMmenu working.-->
+    <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.css">
+    <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.effects.css">
+    <style type="text/css">
+        #my-menu {
+            background-color: #7B68EE;
+        }
+    </style>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.mmenu.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('nav#my-menu').mmenu({
+                classes: "mm-slide"
+            });
+        });
+    </script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/mhome.css" />
     <link rel="stylesheet" href="stylesheets/example.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
@@ -245,7 +262,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <div id="container">
     <div id="header">
-        <div id="header-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></div>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        </div>
         <div id="header-login">
             <div id="fbbutton">
                 <div id="fb-button">
@@ -254,6 +272,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </div>
         </div>
     </div>
+    <nav id="my-menu">
+        <ul>
+            <li><a href="/">Hallo</a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+        </ul>
+    </nav>
     <div id="content">
         <div id="map-canvas"></div>
         <div id="slides">
@@ -270,8 +297,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
         &copy Travsocio Inc
     </div>
 </div>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <!-- End SlidesJS Required -->
+<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
+<!-- End SlidesJS Required -->
 
     <!-- SlidesJS Required: Link to jquery.slides.js -->
     <script src="javascripts/jquery.slides.min.js"></script>
@@ -303,6 +330,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
         document.getElementById('fb-root').appendChild(e);
       }());
 </script>
-
 </body>
 </html>
