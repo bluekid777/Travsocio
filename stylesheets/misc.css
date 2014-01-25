@@ -34,23 +34,10 @@ body {
     color: #ffffff;
 }
 
-#fbbutton {
-    height: 100%;
-    width: 85px;
-    float: right;
-    vertical-align: top;
-    text-align: right;
-    line-height: 1em;
-    padding-top: 2px;
-    padding-right: 5px;
-}
-
-#fb-image {
-    height: 30;
-    width: 30;
-    vertical-align: top;
-    float: left;
-    margin-bottom: 10px;
+#content {
+    height: calc(100% - 2cm - 2px);
+    width: 100%;
+    padding-top: 1cm;
 }
 
 #header-menu {
@@ -62,38 +49,22 @@ body {
 
 #header-login {
     height: 99%;
-    width: 125px;
+    width: 180px;
     vertical-align: top;
     margin-top: 0px;
     float: right;
     font-size: 25px;
     color: #617BA9;
-    text-align: right;
-}
-
-#content {
-    height: calc(100% - 2cm - 2px);
-    width: 100%;
-    padding-top: 1cm;
-}
-
-#map-canvas
-{
-    height: 50%;
-    width: 100%;
-    min-height: 7cm;
-    float: right;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 #footer {
     height: 1cm;
     width: 100%;
+    bottom: 0;
     background-color: #ffffff;
     z-index: 1;
-    bottom: 0;
-    vertical-align: bottom;
+    vertical-align: top;
+    margin-top: 10px;
     padding-bottom: 3px;
     position: fixed;
     border: groove;
@@ -102,6 +73,33 @@ body {
     border-left-width: 0px;
     border-bottom-width: 0px;
     border-bottom-color: #617BA9;
-    font-size: 35px;
+    font-size: 15px;
     color: #617BA9;
+}
+
+#location-form {
+    height: 100%;
+    width: 100%;
+    padding-top: 1cm;
+}
+
+#wiki-title {
+    height: 1cm;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 3px;
+    font-size: 30px;
+    font-family: "Courier New", courier, monospace;
+}
+
+#wiki-content {
+    height: 100%;
+    width: 100%;
+    padding-top: 3px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "Arial", "Helvetica", sans-serif;
+    margin-bottom: 7cm;
 }

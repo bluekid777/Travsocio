@@ -265,6 +265,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
         <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
+            <div id="fb-image">
+                {% if current_user %}
+                <a href="{{ current_user.profile_url }}"><img
+                        src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                {% else %}
+                <img src="static/user.png" height="30" width="30">
+                {% endif %}
+            </div>
             <div id="fbbutton">
                 <div id="fb-button">
                     <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
@@ -274,9 +282,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </div>
     <nav id="my-menu">
         <ul>
-            <li><a href="/">Hallo</a></li>
-            <li><a href="/"></a></li>
-            <li><a href="/"></a></li>
+            <li><a href="/location">Search Nearby</a></li>
+            <li><a href="/wiki">Wikipedia</a></li>
             <li><a href="/"></a></li>
             <li><a href="/"></a></li>
         </ul>

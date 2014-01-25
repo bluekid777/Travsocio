@@ -28,13 +28,14 @@ import jinja2
 import urllib2
 import wikipedia
 import logging
-
+import urllib
 
 from Models import User
 from webapp2_extras import sessions
 from googleplaces import GooglePlaces, lang, types
 from Models import Friend
 from Models import FacebookDataGraph
+from Models import Markers
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -206,71 +207,67 @@ class MobileHandler(BaseHandler):
     def get(self, params=""):
         template = jinja_environment.get_template('mhome.html')
 
-        ny = wikipedia.page('Dresden')
         cu = self.current_user
 
-        google_places = GooglePlaces(GOOGLE_API_KEY)
+        marker = self.session.get("mark")
 
-        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
+        if self.session.get("friends"):
+            friend_list = self.session.get("friends")
+        else:
+            friend_list = []
 
+            if cu:
+                f = FacebookDataGraph(cu["access_token"])
+                f.create_facebook_graph()
 
-        if query_results.has_attributions:
-            print query_results.html_attributions
-
-        locname = []
-        loclat = []
-        loclong = []
-        marker = ""
-
-        for place in query_results.places:
-            try:
-                n = str(place.name)
-                location = place.geo_location
-                lat = location["lat"]
-                lng = location["lng"]
-                locname.append(n)
-                loclat.append(lat)
-                loclong.append(lng)
-            except:
-                print " "
-
-        for i in range(len(locname)):
-            marker += locname[i]
-            marker += ": "
-            marker += str(loclat[i])
-            marker += ", "
-            marker += str(loclong[i])
-            marker += "; "
-
-        marker = self.request.get('marker')
-        friend_list = []
-
-        if cu:
-            f = FacebookDataGraph(cu["access_token"])
-            f.create_facebook_graph()
-
-            for fr in f.friends:
-                try:
-                    friend_list.append(dict(name=fr.name,
-                                            id=fr.id,
-                                            username=fr.username
-                                            ))
-                except:
-                    print ""
+                for fr in f.friends:
+                    try:
+                        friend_list.append(dict(name=fr.name,
+                                                id=fr.id,
+                                                username=fr.username
+                        ))
+                    except:
+                        print ""
+            self.session["friends"] = friend_list
 
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=cu,
-            summary=ny.summary,
             markers=marker,
             friends=friend_list
         )))
 
 
+class WikiHandler(BaseHandler):
+    def get(self):
+        template = jinja_environment.get_template('wiki.html')
+
+        if self.session.get("city"):
+            wik = wikipedia.page(self.session.get("city"))
+        else:
+            wik = wikipedia.page("Dresden")
+
+        summary = wik.summary
+        link = wik.url
+        title = wik.title
+        self.response.out.write(template.render(dict(
+            title=title,
+            summary=summary,
+            link=link
+        )))
+
+
 class LocationHandler(BaseHandler):
+    def get(self):
+        template = jinja_environment.get_template('location_mobile_form.html')
+        self.response.out.write(template.render())
+
     def post(self):
         city = self.request.get('city')
         category = self.request.get('category')
+
+        ##Image Search##
+
 
         google_places = GooglePlaces(GOOGLE_API_KEY)
         query_results = google_places.nearby_search(location=city, keyword=category, radius=20000)
@@ -303,8 +300,10 @@ class LocationHandler(BaseHandler):
             marker += str(loclong[i])
             marker += "; "
 
+        self.session["mark"] = marker
+        self.session["city"] = city
 
-            #self.redirect('/mobile/marker=' + marker=)
+        self.redirect('/mobile')
 
 
 class MainHandler(BaseHandler):
@@ -322,6 +321,8 @@ class LogoutHandler(BaseHandler):
     def get(self):
         if self.current_user is not None:
             self.session['user'] = None
+            self.session["friends"] = None
+            self.session["mark"] = None
 
         self.redirect('/')
 
@@ -331,7 +332,7 @@ jinja_environment = jinja2.Environment(
 
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
-     ('/location', LocationHandler)],
+     ('/location', LocationHandler), ('/wiki', WikiHandler)],
     debug=True,
     config=config
 )

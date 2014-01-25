@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/misc.css"/>
+    <title>Wiki</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="header-menu"><a href="/mobile"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        </div>
+        <div id="header-login">
+        </div>
+    </div>
+    <div id="content">
+        <div id="wiki-title">{{ title }}</div>
+        <div id="wiki-content">{{ summary }}<a href="{{ link  }}">more..</a></div>
+        <form method="get" action="/mobile" id="wiki-form">
+            <input type="submit" draggable="false" value="Back" height="1cm"></br>
+        </form>
+    </div>
+    <div id="footer">
+        &copy Travsocio Inc
+    </div>
+</div>
+</html>

@@ -12,6 +12,11 @@ class User(db.Model):
     city = db.StringProperty(required=True)
 
 
+class Markers(db.Model):
+    name = db.StringProperty(required=True)
+    mark = db.StringProperty(required=True)
+
+
 class Place(db.Model):
     id = db.StringProperty(required=True)
     name = db.StringProperty(required=True)

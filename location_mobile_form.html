@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/mhome.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/misc.css"/>
     <title>Search Local Places</title>
 </head>
 <body>
-<div id="header">
-    <div id="header-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></div>
-    <div id="header-login">
-        <div id="fbbutton">
-            <div id="fb-button">
-                <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
-            </div>
+<div id="container">
+    <div id="header">
+        <div id="header-menu"><a href="/mobile"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        </div>
+        <div id="header-login">
         </div>
     </div>
-</div>
-<form method="post" action="/location">
-    City/Place:<input type="text" name="city" draggable="false" height="1cm" width="60%" placeholder="City"></br>
-    Category :<input type="text" name="category" draggable="false" height="1cm" width="60%" placeholder="Category"></br>
-    <input type="submit" value="Search">
-</form>
-<div id="footer">
-    &copy Travsocio Inc
+    <div id="content">
+        <form method="post" action="/location" id="location-form">
+            City/Place:<input type="text" name="city" draggable="false" height="1cm" width="60%"
+                              placeholder="City"></br>
+            Category &nbsp:<input type="text" name="category" draggable="false" height="1cm" width="60%"
+                                  placeholder="Category"></br>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div id="footer">
+        &copy Travsocio Inc
+    </div>
 </div>
 </html>
