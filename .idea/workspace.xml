@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc902a26-d95b-4a3d-82e9-c601c2c2ba42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Google.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google-api-python-client-1.2/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/misc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wiki.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models.py" afterPath="$PROJECT_DIR$/Models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Travsocio.iml" afterPath="$PROJECT_DIR$/.idea/Travsocio.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location_mobile_form.html" afterPath="$PROJECT_DIR$/location_mobile_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/mhome.css" afterPath="$PROJECT_DIR$/stylesheets/mhome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mhome.html" afterPath="$PROJECT_DIR$/mhome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/misc.css" afterPath="$PROJECT_DIR$/stylesheets/misc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki.html" afterPath="$PROJECT_DIR$/wiki.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
@@ -25,7 +23,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1389956005767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Travsocio$main.coverage" NAME="main Coverage Results" MODIFIED="1390730298376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,21 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="43" selection-start="8224" selection-end="8224" vertical-scroll-proportion="-8.84" vertical-offset="3514" max-vertical-offset="5160">
+            <state line="14" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.6511626" vertical-offset="3210" max-vertical-offset="5580">
               <folding>
-                <element signature="e#916#931#0" expanded="true" />
+                <element signature="e#755#770#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wiki.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wiki.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="118" selection-start="303" selection-end="303" vertical-scroll-proportion="0.20089285" vertical-offset="0" max-vertical-offset="672">
+            <state line="18" column="46" selection-start="608" selection-end="608" vertical-scroll-proportion="6.7083335" vertical-offset="431" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -62,7 +60,18 @@
       <file leaf-file-name="Models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+            <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1830">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="22" selection-start="1424" selection-end="1424" vertical-scroll-proportion="-2.0416667" vertical-offset="491" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -71,16 +80,7 @@
       <file leaf-file-name="mhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="22" selection-start="8130" selection-end="8130" vertical-scroll-proportion="-175.625" vertical-offset="0" max-vertical-offset="5175">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="location_mobile_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="118" selection-start="319" selection-end="319" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="450">
+            <state line="303" column="4" selection-start="9482" selection-end="9482" vertical-scroll-proportion="9.125" vertical-offset="4764" max-vertical-offset="5385">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,16 @@
       <file leaf-file-name="mhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="17" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.0" vertical-offset="971" max-vertical-offset="1680">
+            <state line="120" column="17" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="1757" max-vertical-offset="2415">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location_mobile_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="59" selection-start="1848" selection-end="1848" vertical-scroll-proportion="-16.416666" vertical-offset="236" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
@@ -98,7 +107,7 @@
       <file leaf-file-name="misc.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/misc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="20" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1665">
+            <state line="141" column="20" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1787" max-vertical-offset="2550">
               <folding />
             </state>
           </provider>
@@ -107,7 +116,7 @@
       <file leaf-file-name="dhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="27" selection-start="7112" selection-end="7413" vertical-scroll-proportion="-5.5833335" vertical-offset="3691" max-vertical-offset="5535">
+            <state line="315" column="148" selection-start="10559" selection-end="10646" vertical-scroll-proportion="7.875" vertical-offset="4914" max-vertical-offset="5535">
               <folding />
             </state>
           </provider>
@@ -116,7 +125,7 @@
       <file leaf-file-name="dhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="306" column="30" selection-start="5451" selection-end="5451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5310">
+            <state line="306" column="30" selection-start="5451" selection-end="5451" vertical-scroll-proportion="0.0" vertical-offset="4652" max-vertical-offset="5310">
               <folding />
             </state>
           </provider>
@@ -144,23 +153,24 @@
         <option value="$PROJECT_DIR$/dhome.html" />
         <option value="$PROJECT_DIR$/stylesheets/dhome.css" />
         <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/Google.py" />
-        <option value="$PROJECT_DIR$/mhome.html" />
         <option value="$PROJECT_DIR$/misc.css" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/stylesheets/mhome.css" />
-        <option value="$PROJECT_DIR$/stylesheets/misc.css" />
-        <option value="$PROJECT_DIR$/location_mobile_form.html" />
+        <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/wiki.html" />
+        <option value="$PROJECT_DIR$/location_mobile_form.html" />
+        <option value="$PROJECT_DIR$/stylesheets/misc.css" />
+        <option value="$PROJECT_DIR$/comment.html" />
+        <option value="$PROJECT_DIR$/mhome.html" />
+        <option value="$PROJECT_DIR$/stylesheets/mhome.css" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
-    <option name="y" value="22" />
-    <option name="width" value="1208" />
-    <option name="height" value="878" />
+    <option name="x" value="75" />
+    <option name="y" value="75" />
+    <option name="width" value="1343" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -204,34 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikipedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travsocio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +465,11 @@
       <created>1390569743746</created>
       <updated>1390569743747</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="wiki, location working">
+      <created>1390678170986</created>
+      <updated>1390678170986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -507,19 +493,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="22" width="1208" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="75" y="75" width="1343" height="827" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2745267" sideWeight="0.6723684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2544333" sideWeight="0.6713681" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276316" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,20 +528,14 @@
     <MESSAGE value="mobile redirect" />
     <MESSAGE value="mobile redirect new" />
     <MESSAGE value="mobile menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="mobile menu" />
+    <MESSAGE value="wiki, location working" />
+    <option name="LAST_COMMIT_MESSAGE" value="wiki, location working" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="21" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0" vertical-offset="2742" max-vertical-offset="3870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/example.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1709" column="18" selection-start="41921" selection-end="41921" vertical-scroll-proportion="0.0" vertical-offset="25435" max-vertical-offset="26130" />
@@ -563,9 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="8295">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="8295" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/base.css">
@@ -575,49 +553,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="639" selection-end="646" vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="735">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="639" selection-end="646" vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Google.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="30" selection-start="3213" selection-end="3235" vertical-scroll-proportion="-4.64" vertical-offset="1654" max-vertical-offset="7470">
-          <folding>
-            <element signature="e#19#58#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="118" column="30" selection-start="3213" selection-end="3235" vertical-scroll-proportion="-4.64" vertical-offset="1654" max-vertical-offset="7470" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dhome.html">
+    <entry file="file://$PROJECT_DIR$/wikipedia/wikipedia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="27" selection-start="7112" selection-end="7413" vertical-scroll-proportion="-5.5833335" vertical-offset="3691" max-vertical-offset="5535">
+        <state line="29" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="7020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="608" selection-end="608" vertical-scroll-proportion="6.7083335" vertical-offset="431" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+        <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="22" selection-start="1424" selection-end="1424" vertical-scroll-proportion="-2.0416667" vertical-offset="491" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wikipedia/wikipedia.py">
+    <entry file="file://$PROJECT_DIR$/mhome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="7020">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state line="303" column="4" selection-start="9482" selection-end="9482" vertical-scroll-proportion="9.125" vertical-offset="4764" max-vertical-offset="5385">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="43" selection-start="8224" selection-end="8224" vertical-scroll-proportion="-8.84" vertical-offset="3514" max-vertical-offset="5160">
-          <folding>
-            <element signature="e#916#931#0" expanded="true" />
-          </folding>
+        <state line="120" column="17" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="1532" max-vertical-offset="2415">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -628,38 +610,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
+    <entry file="file://$PROJECT_DIR$/dhome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="17" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.0" vertical-offset="971" max-vertical-offset="1680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="22" selection-start="8130" selection-end="8130" vertical-scroll-proportion="-175.625" vertical-offset="0" max-vertical-offset="5175">
+        <state line="315" column="148" selection-start="10559" selection-end="10646" vertical-scroll-proportion="7.875" vertical-offset="4914" max-vertical-offset="5535">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/misc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="626" max-vertical-offset="1665">
+        <state line="141" column="20" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1787" max-vertical-offset="2550">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="118" selection-start="319" selection-end="319" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="450">
+        <state line="42" column="59" selection-start="1848" selection-end="1848" vertical-scroll-proportion="-16.416666" vertical-offset="236" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki.html">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="118" selection-start="303" selection-end="303" vertical-scroll-proportion="0.20089285" vertical-offset="0" max-vertical-offset="672">
-          <folding />
+        <state line="14" column="32" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.6511626" vertical-offset="3210" max-vertical-offset="5580">
+          <folding>
+            <element signature="e#755#770#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

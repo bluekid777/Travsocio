@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/misc.css"/>
-    <title>Wiki</title>
+    <title>Comment</title>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -36,17 +36,20 @@
         </div>
     </div>
     <div id="content">
-        <div id="wiki-title">{{ title }}</div>
-        <div id="wiki-content">{{ summary }}<a href="{{ link  }}">more..</a></div>
-        <form method="get" action="/mobile" id="wiki-form">
-            <input type="submit" draggable="false" value="Back" height="1cm"></br>
+        {% if user %}
+        <div id="wiki-title">Comment</div>
+        <form method="post" action="/comment" id="comment-form">
+            <textarea id="comment-text" placeholder="Enter your comments here...." name="comment"></textarea>
+            <input type="submit" draggable="false" value="Save" id="button"/></br>
         </form>
+        {% else %}
+        <div id="message">Please log in to continue....</div>
+        {% endif %}
     </div>
     <div id="footer">
         &copy Travsocio Inc
     </div>
 </div>
-</body>
 <script>
     window.fbAsyncInit = function () {
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
@@ -73,4 +76,5 @@
                 document.getElementById('fb-root').appendChild(e);
             }());
 </script>
+</body>
 </html>

@@ -16,10 +16,7 @@
 #
 FACEBOOK_APP_ID = '1426929370852106'
 FACEBOOK_APP_SECRET = '2158fd034e3235b417de3e55bd6df0c9'
-FOURSQUARE_CLIENT_ID = 'RO5GG3FDPEEPNGCVQ3DQVNDG3HEFXAW1R5NMGMTLQA0VROV0'
-FOURSQUARE_CLIENT_SECRET = 'UX35D0GPQW4T3Q2QTT4DMV5XVTEN2YAYMKMWVFYI0XUOAWAN'
 GOOGLE_API_KEY = 'AIzaSyAQhPtv1ef2PKLoYK9swqQEp-dBh7rIaHc'
-F = None
 
 import facebook
 import webapp2
@@ -32,10 +29,12 @@ import urllib
 
 from Models import User
 from webapp2_extras import sessions
+from google.appengine.ext import db
 from googleplaces import GooglePlaces, lang, types
 from Models import Friend
 from Models import FacebookDataGraph
 from Models import Markers
+from Models import Comment
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -230,11 +229,17 @@ class MobileHandler(BaseHandler):
                         print ""
             self.session["friends"] = friend_list
 
+        if (self.session.get("city")):
+            comments = db.GqlQuery("SELECT * FROM Comment WHERE name = :1", str(self.session.get("city")).lower())
+        else:
+            comments = db.GqlQuery("SELECT * FROM Comment WHERE name = 'dresden'")
+
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=cu,
             markers=marker,
-            friends=friend_list
+            friends=friend_list,
+            coms=comments
         )))
 
 
@@ -251,6 +256,7 @@ class WikiHandler(BaseHandler):
         link = wik.url
         title = wik.title
         self.response.out.write(template.render(dict(
+            current_user=self.session.get("user"),
             title=title,
             summary=summary,
             link=link
@@ -260,7 +266,7 @@ class WikiHandler(BaseHandler):
 class LocationHandler(BaseHandler):
     def get(self):
         template = jinja_environment.get_template('location_mobile_form.html')
-        self.response.out.write(template.render())
+        self.response.out.write(template.render(current_user=self.session.get("user")))
 
     def post(self):
         city = self.request.get('city')
@@ -306,6 +312,29 @@ class LocationHandler(BaseHandler):
         self.redirect('/mobile')
 
 
+class CommentHandler(BaseHandler):
+    def get(self):
+        template = jinja_environment.get_template('comment.html')
+
+        if (self.session.get("user")):
+            self.response.out.write(template.render(current_user=self.session.get("user"),
+                                                    user=self.session.get("user")))
+
+        else:
+            self.response.out.write(template.render(user=None))
+
+    def post(self):
+        comment = self.request.get("comment")
+        id = self.session.get("user")["id"]
+        if self.session.get("city"):
+            city = str(self.session.get("city")).lower()
+        else:
+            city = "dresden"
+        co = Comment(name=city, uid=id, comment=comment)
+        Comment.put(co)
+        self.redirect('/mobile')
+
+
 class MainHandler(BaseHandler):
 
     def get(self):
@@ -324,7 +353,8 @@ class LogoutHandler(BaseHandler):
             self.session["friends"] = None
             self.session["mark"] = None
 
-        self.redirect('/')
+        self.redirect('/mobile')
+
 
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__))
@@ -332,7 +362,7 @@ jinja_environment = jinja2.Environment(
 
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
-     ('/location', LocationHandler), ('/wiki', WikiHandler)],
+     ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler)],
     debug=True,
     config=config
 )

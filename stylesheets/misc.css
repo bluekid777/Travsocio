@@ -1,6 +1,7 @@
 html {
     width: 100%;
     height: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -17,10 +18,11 @@ body {
 }
 
 #header {
-    height: 1cm;
+    height: 45px;
     width: 100%;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 100;
+    margin-top: 0px;
     vertical-align: top;
     padding-top: 3px;
     position: fixed;
@@ -34,10 +36,23 @@ body {
     color: #ffffff;
 }
 
-#content {
-    height: calc(100% - 2cm - 2px);
-    width: 100%;
-    padding-top: 1cm;
+#fbbutton {
+    height: 100%;
+    width: 85px;
+    float: right;
+    vertical-align: top;
+    text-align: right;
+    line-height: 1em;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+#fb-image {
+    height: 30;
+    width: 30;
+    margin-top: 5px;
+    vertical-align: top;
+    float: left;
 }
 
 #header-menu {
@@ -49,44 +64,42 @@ body {
 
 #header-login {
     height: 99%;
-    width: 180px;
+    width: 125px;
     vertical-align: top;
     margin-top: 0px;
+    padding-top: 0px;
     float: right;
     font-size: 25px;
     color: #617BA9;
+    text-align: right;
 }
 
-#footer {
-    height: 1cm;
+#content {
+    height: 100%;
+    max-height: 100%;
     width: 100%;
-    bottom: 0;
-    background-color: #ffffff;
-    z-index: 1;
-    vertical-align: top;
-    margin-top: 10px;
-    padding-bottom: 3px;
-    position: fixed;
-    border: groove;
-    border-top-width: 1px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-bottom-width: 0px;
-    border-bottom-color: #617BA9;
-    font-size: 15px;
-    color: #617BA9;
+    padding-top: 50px;
+    text-align: center;
 }
 
 #location-form {
     height: 100%;
     width: 100%;
+    position: relative;
+    margin: 5px 5px;
+}
+
+#wiki-form {
+    height: 100%;
+    width: 100%;
     padding-top: 1cm;
+    margin: 5px 5px;
 }
 
 #wiki-title {
-    height: 1cm;
+    height: 40px;
     width: 100%;
-    margin-top: 3px;
+    margin-top: 10px;
     margin-left: 3px;
     font-size: 30px;
     font-family: "Courier New", courier, monospace;
@@ -102,4 +115,50 @@ body {
     text-align: justify;
     font-family: "Arial", "Helvetica", sans-serif;
     margin-bottom: 7cm;
+}
+
+#comment-form {
+    height: 40%;
+    width: 95%;
+    position: absolute;
+}
+
+#comment-text {
+    height: 30%;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+#message {
+    height: 100%;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+#button {
+    height: 35px;
+    width: 120px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#footer {
+    height: 30px;
+    max-height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+    bottom: 0;
+    position: fixed;
+    border: groove;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-bottom-color: #617BA9;
+    font-size: 15px;
+    text-align: center;
+    color: #617BA9;
 }

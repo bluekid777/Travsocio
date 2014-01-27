@@ -284,7 +284,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         <ul>
             <li><a href="/location">Search Nearby</a></li>
             <li><a href="/wiki">Wikipedia</a></li>
-            <li><a href="/"></a></li>
+            <li><a href="/comment">Comment</a></li>
             <li><a href="/"></a></li>
         </ul>
     </nav>
@@ -299,6 +299,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
                       <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
                       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
         </div>
+        {% if coms %}
+        <div id="headom">Comments</br></div>
+        <div id="comments">
+            {% for c in coms %}
+            <div id="comment">
+                <div id="comment-pic">
+                    <img src="http://graph.facebook.com/{{ c.uid }}/picture?width=30&height=30"/>
+                </div>
+                <div id="comment-text">{{ c.comment }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
     <div id="footer">
         &copy Travsocio Inc

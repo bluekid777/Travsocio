@@ -12,6 +12,13 @@ class User(db.Model):
     city = db.StringProperty(required=True)
 
 
+class Comment(db.Model):
+    name = db.StringProperty(required=True)
+    uid = db.StringProperty(required=True)
+    comment = db.StringProperty(required=True)
+    created = db.DateTimeProperty(auto_now_add=True)
+
+
 class Markers(db.Model):
     name = db.StringProperty(required=True)
     mark = db.StringProperty(required=True)

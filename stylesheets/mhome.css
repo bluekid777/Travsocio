@@ -1,6 +1,7 @@
 html {
     width: 100%;
     height: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -17,10 +18,11 @@ body {
 }
 
 #header {
-    height: 1cm;
+    height: 45px;
     width: 100%;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 100;
+    margin-top: 0px;
     vertical-align: top;
     padding-top: 3px;
     position: fixed;
@@ -41,7 +43,7 @@ body {
     vertical-align: top;
     text-align: right;
     line-height: 1em;
-    padding-top: 2px;
+    padding-top: 8px;
     padding-right: 5px;
 }
 
@@ -50,7 +52,6 @@ body {
     width: 30;
     vertical-align: top;
     float: left;
-    margin-bottom: 10px;
 }
 
 #header-menu {
@@ -65,6 +66,7 @@ body {
     width: 125px;
     vertical-align: top;
     margin-top: 0px;
+    padding-top: 0px;
     float: right;
     font-size: 25px;
     color: #617BA9;
@@ -72,7 +74,8 @@ body {
 }
 
 #content {
-    height: calc(100% - 2cm - 2px);
+    height: 100%;
+    max-height: 100%;
     width: 100%;
     padding-top: 1cm;
 }
@@ -87,14 +90,58 @@ body {
     margin-right: 0px;
 }
 
+#comments {
+    height: 100%;
+    width: 93%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 45px;
+    border: groove;
+    border-width: 1px;
+    border-color: #617BA9;
+    padding: 5px 5px;
+}
+
+#comment {
+    width: 97%;
+    height: 100%;
+    min-height: 60px;
+}
+
+#comment-pic {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 5px 5px;
+    text-align: center;
+
+}
+
+#comment-text {
+    height: 60px;
+    width: 100%;
+    padding: 4px 4px;
+    max-width: calc(100% - 60px);
+    text-align: right;
+    font-size: 13px;
+    float: right;
+}
+
+#headom {
+    margin-left: 5px;
+    height: 100%;
+    width: 100%;
+}
+
 #footer {
-    height: 1cm;
+    height: 30px;
+    max-height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
     width: 100%;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 100;
     bottom: 0;
-    vertical-align: bottom;
-    padding-bottom: 3px;
     position: fixed;
     border: groove;
     border-top-width: 1px;
@@ -103,5 +150,6 @@ body {
     border-bottom-width: 0px;
     border-bottom-color: #617BA9;
     font-size: 35px;
+    text-align: center;
     color: #617BA9;
 }
