@@ -362,7 +362,8 @@ jinja_environment = jinja2.Environment(
 
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
-     ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler)],
+     ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler),
+     ('/shareex', ExperienceHandler), ('/createevent', EventHandler), ('/friend', FriendHandler)],
     debug=True,
     config=config
 )
