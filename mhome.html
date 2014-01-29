@@ -4,9 +4,15 @@
     <!-- jQuerryMmenu. Part 1. Lines for jQuerryMmenu working.-->
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.css">
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.effects.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.mmenu.positioning.css">
     <style type="text/css">
         #my-menu {
             background-color: #7B68EE;
+            color: #4682B4;
+        }
+        #right-menu {
+	    background-color: #DCDCDC;
+	    color: #4682B4;
         }
     </style>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
@@ -15,8 +21,16 @@
         $(function () {
             $('nav#my-menu').mmenu({
                 classes: "mm-slide"
+                zposition: "front"
             });
         });
+        $(function () {
+		$('nav#right-menu').mmenu({
+                	classes: "mm-slide",
+			position: "right",
+			zposition: "front"
+            	});
+            {);
     </script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/mhome.css" />
     <link rel="stylesheet" href="stylesheets/example.css">
@@ -262,7 +276,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <div id="container">
     <div id="header">
-        <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" height="70px" width="200px" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
             <div id="fb-image">
@@ -279,14 +293,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 </div>
             </div>
         </div>
+    
+    	<a href="#right-menu">Menu</a>
     </div>
-    <nav id="my-menu">
+    <nav id="my-menu" style="font-size: 140%">
         <ul>
             <li><a href="/location">Search Nearby</a></li>
             <li><a href="/wiki">Wikipedia</a></li>
             <li><a href="/comment">Comment</a></li>
             <li><a href="/createevent">Create Event</a></li>
             <li><a href="/shareex">Share Experience</a></li>
+        </ul>
+    </nav>
+    <nav id="right-menu">
+        <ul style="font-size: 140%">
+            <li><a href="">Friend1</a></li>
+            <li><a href="">Friend2</a></li>
+            <li><a href="">Friend3</a></li>
         </ul>
     </nav>
     <div id="content">
