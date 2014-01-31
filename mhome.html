@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.positioning.css">
     <style type="text/css">
         #my-menu {
-            background-color: #7B68EE;
-            color: #4682B4;
+            background-color: #ffffff;
+            color: #617BA9;
         }
         #right-menu {
-	    background-color: #DCDCDC;
-	    color: #4682B4;
+            background-color: #ffffff;
+            color: #617BA9;
+            float: right;
+            margin-right: 7px;
         }
     </style>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
@@ -293,8 +295,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 </div>
             </div>
         </div>
-    
-    	<a href="#right-menu">Menu</a>
     </div>
     <nav id="my-menu" style="font-size: 140%">
         <ul>
@@ -307,9 +307,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </nav>
     <nav id="right-menu">
         <ul style="font-size: 140%">
-            <li><a href="">Friend1</a></li>
-            <li><a href="">Friend2</a></li>
-            <li><a href="">Friend3</a></li>
+            {% if current_user %}
+            <div id="friend-bar">
+                {% for f in friends %}
+                <li><p><img src="https://graph.facebook.com/{{ f.username }}/picture?width=30&height=30"><a href="">{{
+                    f.name }}</a><input type="submit" value="invite" id="invite"></p>
+                <li>
+                    {% endfor %}
+            </div>
+            {% endif %}
         </ul>
     </nav>
     <div id="content">
@@ -339,6 +345,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </div>
     <div id="footer">
         &copy Travsocio Inc
+        {% if friends|count > 0 %}
+        <div id="right-menu"><a href="#right-menu">Friends</a></div>
+        {% endif %}
     </div>
 </div>
 <!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->

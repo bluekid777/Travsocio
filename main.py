@@ -335,6 +335,18 @@ class CommentHandler(BaseHandler):
         self.redirect('/mobile')
 
 
+class EventHandler(BaseHandler):
+    def get(self):
+        template = jinja_environment.get_template('create_event.html')
+
+        if (self.session.get("user")):
+            self.response.out.write(template.render(current_user=self.session.get("user"),
+                                                    user=self.session.get("user")))
+
+        else:
+            self.response.out.write(template.render(user=None))
+
+
 class MainHandler(BaseHandler):
 
     def get(self):
@@ -363,7 +375,7 @@ jinja_environment = jinja2.Environment(
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
      ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler),
-     ('/shareex', ExperienceHandler), ('/createevent', EventHandler), ('/friend', FriendHandler)],
+     ('/createevent', EventHandler)], #('/shareex', ExperienceHandler), ('/friend', FriendHandler)
     debug=True,
     config=config
 )

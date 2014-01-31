@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- jQuerryMmenu. Part 1. Lines for jQuerryMmenu working.-->
+
     <link rel="stylesheet" type="text/css" href="stylesheets/misc.css"/>
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.css">
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.effects.css">
@@ -34,6 +35,7 @@
             });
         });
     </script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mhome.css"/>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -46,9 +48,10 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
+
 <div id="container">
     <div id="header">
-        <div id="header-menu"><a href="/mobile"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
             <div id="fb-image">
@@ -63,21 +66,41 @@
                 <div id="fb-button">
                     <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
                 </div>
+                <a href="#right-menu"></a>
             </div>
         </div>
     </div>
+    <a href="#right-menu">Menu</a>
+    <nav id="my-menu" style="font-size: 140%">
+        <ul>
+            <li><a href="/mobile">Home</a></li>
+            <li><a href="/location">Search Nearby</a></li>
+            <li><a href="/wiki">Wikipedia</a></li>
+            <li><a href="/comment">Comment</a></li>
+            <li><a href="/createevent">Create Event</a></li>
+            <li><a href="/shareex">Share Experience</a></li>
+        </ul>
+    </nav>
+    <nav id="right-menu">
+        <ul style="font-size: 140%">
+            <li><a href="">Friend1</a></li>
+            <li><a href="">Friend2</a></li>
+            <li><a href="">Friend3</a></li>
+        </ul>
+    </nav>
     <div id="content">
-        <div id="wiki-title">{{ title }}</div>
-        <div id="wiki-content">{{ summary }}<a href="{{ link  }}">more..</a></div>
-        <form method="get" action="/mobile" id="wiki-form">
-            <input type="submit" draggable="false" value="Back" height="1cm"></br>
+        <form method="post" action="/location" id="location-form">
+            Event Name:<input id="textbox" type="text" name="event" draggable="false"
+                              placeholder="Holiday Trip"></br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp Start Date:&nbsp&nbsp&nbsp<input type="date" name="event-date" draggable="false"
+                                                                       height="1cm"> </br>
+            <input type="submit" value="Create" id="button">
         </form>
     </div>
     <div id="footer">
         &copy Travsocio Inc
     </div>
 </div>
-</body>
 <script>
     window.fbAsyncInit = function () {
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
@@ -92,16 +115,17 @@
                 {%
                     endif %
                 }
-
             }
+            )
             ;
-            (function () {
-                var e = document.createElement('script');
-                e.type = 'text/javascript';
-                e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-                e.async = true;
-
-                document.getElementById('fb-root').appendChild(e);
-            }());
+        };
+        (function () {
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+            e.async = true;
+            document.getElementById('fb-root').appendChild(e);
+        }());
 </script>
+</body>
 </html>
