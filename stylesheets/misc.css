@@ -165,7 +165,7 @@ body {
 }
 
 #textbox-event {
-    height: 20px;
+    height: 30px;
     width: 200px;
     text-align: right;
     margin-top: 30px;
@@ -175,6 +175,7 @@ body {
     height: 30px;
     width: 200px;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 #footer {

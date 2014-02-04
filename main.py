@@ -26,6 +26,7 @@ import urllib2
 import wikipedia
 import logging
 import urllib
+import datetime
 
 from Models import User
 from webapp2_extras import sessions
@@ -36,6 +37,7 @@ from Models import FacebookDataGraph
 from Models import Markers
 from Models import Comment
 from Models import Experience
+from Models import Event
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -344,10 +346,14 @@ class EventHandler(BaseHandler):
             self.response.out.write(template.render(user=None))
 
     def post(self):
-        time = self.request.get('event-date')
+        starttime = str(self.request.get('startdate'))
+        endtime = str(self.request.get('enddate'))
         name = self.request.get('event')
-        graph = facebook.GraphAPI(self.current_user['access_token'])
-        response = graph.create_event(name,time)
+        print starttime
+        print datetime.date.today()
+        id = self.session.get('user')["id"]
+        e = Event(name=name, uid=id, start=starttime, end=endtime)
+        Event.put(e)
         self.redirect('/mobile')
 
 

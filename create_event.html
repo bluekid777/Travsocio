@@ -11,11 +11,13 @@
         #my-menu {
             background-color: #ffffff;
             color: #617BA9;
+            font-size: 30px;
         }
-
         #right-menu {
             background-color: #ffffff;
             color: #617BA9;
+            float: right;
+            margin-right: 7px;
         }
     </style>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
@@ -81,22 +83,33 @@
     </nav>
     <nav id="right-menu">
         <ul style="font-size: 140%">
-            <li><a href="">Friend1</a></li>
-            <li><a href="">Friend2</a></li>
-            <li><a href="">Friend3</a></li>
+            {% if current_user %}
+            <div id="friend-bar">
+                {% for f in friends %}
+                <li><p><img src="https://graph.facebook.com/{{ f.username }}/picture?width=30&height=30"><a href="">{{
+                    f.name }}</a><input type="submit" value="invite" id="invite"></p>
+                <li>
+                    {% endfor %}
+            </div>
+            {% endif %}
         </ul>
     </nav>
     <div id="content">
         <form method="post" action="/createevent" id="location-form">
             Event Name:&nbsp&nbsp<input id="textbox-event" type="text" name="event" draggable="false"
-                              placeholder="Holiday Trip"></br></br>
-            &nbspStart Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="datetime-local" id="date-event" name="event-date" draggable="false"
+                              placeholder="Holiday Trip"></br>
+            &nbspStart Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" id="date-event" name="startdate" draggable="false"
+                                                                       height="1cm"> </br>
+            &nbspEnd Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" id="date-event" name="enddate" draggable="false"
                                                                        height="1cm"> </br>
             <input type="submit" value="Create" id="button">
         </form>
     </div>
     <div id="footer">
         &copy Travsocio Inc
+        {% if friends|count > 0 %}
+        <div id="right-menu"><a href="#right-menu">Friends</a></div>
+        {% endif %}
     </div>
 </div>
 <script>
