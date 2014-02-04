@@ -51,26 +51,24 @@
 
 <div id="container">
     <div id="header">
-        <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
             <div id="fb-image">
                 {% if current_user %}
                 <a href="{{ current_user.profile_url }}"><img
-                        src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                        src="http://graph.facebook.com/{{ current_user.id }}/picture?width=45&height=45"/></a>
                 {% else %}
-                <img src="static/user.png" height="30" width="30">
+                <img src="static/user.png" height="45" width="45">
                 {% endif %}
             </div>
             <div id="fbbutton">
                 <div id="fb-button">
-                    <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
+                    <fb:login-button height="35px" autologoutlink="true" scope="publish_stream"></fb:login-button>
                 </div>
-                <a href="#right-menu"></a>
             </div>
         </div>
     </div>
-    <a href="#right-menu">Menu</a>
     <nav id="my-menu" style="font-size: 140%">
         <ul>
             <li><a href="/mobile">Home</a></li>
@@ -89,10 +87,10 @@
         </ul>
     </nav>
     <div id="content">
-        <form method="post" action="/location" id="location-form">
-            Event Name:<input id="textbox" type="text" name="event" draggable="false"
-                              placeholder="Holiday Trip"></br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp Start Date:&nbsp&nbsp&nbsp<input type="date" name="event-date" draggable="false"
+        <form method="post" action="/createevent" id="location-form">
+            Event Name:&nbsp&nbsp<input id="textbox-event" type="text" name="event" draggable="false"
+                              placeholder="Holiday Trip"></br></br>
+            &nbspStart Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="datetime-local" id="date-event" name="event-date" draggable="false"
                                                                        height="1cm"> </br>
             <input type="submit" value="Create" id="button">
         </form>
@@ -106,18 +104,12 @@
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
             xfbml: true});
         FB.Event.subscribe('{% if current_user %}auth.logout{% else %}auth.login{% endif %}', function (response) {
-            {%
-                if current_user %}
+            {% if current_user %}
                 window.location = "/logout"
-                {% else %
-                }
+                {% else %}
                 window.location.reload();
-                {%
-                    endif %
-                }
-            }
-            )
-            ;
+                {% endif %}
+            });
         };
         (function () {
             var e = document.createElement('script');

@@ -111,10 +111,54 @@ class GraphAPI(object):
         """Fetchs the connections for given object."""
         return self.request(id + "/" + connection_name, args)
 
+    def create_event(self, name, date):
+
+        object_id = "me"
+        #it would have been nice to reuse self.request;
+        #but multipart is messy in urllib
+        post_args = {
+            'access_token': self.access_token,
+            'name': name,
+            'start_time': date,
+        }
+
+        content_type, body = self._encode_multipart_form(post_args)
+
+        req = urllib2.Request(("https://graph.facebook.com/%s/events" %
+                               object_id),
+                              data=body)
+        req.add_header('Content-Type', content_type)
+        try:
+            data = urllib2.urlopen(req).read()
+        #For Python 3 use this:
+        #except urllib2.HTTPError as e:
+        except urllib2.HTTPError, e:
+            data = e.read()  # Facebook sends OAuth errors as 400, and urllib2
+                             # throws an exception, we want a GraphAPIError
+        try:
+            response = _parse_json(data)
+            # Raise an error if we got one, but don't not if Facebook just
+            # gave us a Bool value
+            if (response and isinstance(response, dict) and
+                    response.get("error")):
+                raise GraphAPIError(response)
+        except ValueError:
+            response = data
+
+        return response
+
     def put_object(self, parent_object, connection_name, **data):
         """Writes the given object to the graph, connected to the given parent.
 
         For example,
+
+
+            POST /me/events HTTP/1.1
+            Host: graph.facebook.com
+            name=This+is+a+test+event&start_time=2014-03-01T13%3A00%3A00-0800
+
+
+
 
             graph.put_object("me", "feed", message="Hello, world")
 

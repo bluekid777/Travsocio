@@ -83,18 +83,13 @@
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
             xfbml: true});
         FB.Event.subscribe('{% if current_user %}auth.logout{% else %}auth.login{% endif %}', function (response) {
-            {%
-                if current_user %}
+            {% if current_user %}
                 window.location = "/logout"
-                {% else %
-                }
+                {% else %}
                 window.location.reload();
-                {%
-                    endif %
-                }
+                {% endif %}
 
-            }
-            ;
+            };
             (function () {
                 var e = document.createElement('script');
                 e.type = 'text/javascript';

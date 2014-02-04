@@ -19,6 +19,13 @@ class Comment(db.Model):
     created = db.DateTimeProperty(auto_now_add=True)
 
 
+class Experience(db.Model):
+    city = db.StringProperty(required=True)
+    name = db.StringProperty(required=True)
+    id = db.StringProperty(required=True)
+    experience = db.StringProperty(required=True)
+
+
 class Markers(db.Model):
     name = db.StringProperty(required=True)
     mark = db.StringProperty(required=True)

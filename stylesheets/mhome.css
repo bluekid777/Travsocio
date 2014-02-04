@@ -18,13 +18,13 @@ body {
 }
 
 #header {
-    height: 45px;
+    height: 65px;
     width: 100%;
     background-color: #ffffff;
     z-index: 100;
     margin-top: 0px;
     vertical-align: top;
-    padding-top: 3px;
+    padding-top: 0px;
     position: fixed;
     border: groove;
     border-top-width: 0px;
@@ -32,8 +32,14 @@ body {
     border-left-width: 0px;
     border-bottom-width: 1px;
     border-bottom-color: #617BA9;
-    font-size: 25px;
+    font-size: 45px;
     color: #ffffff;
+}
+
+#logo {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #fbbutton {
@@ -43,27 +49,29 @@ body {
     vertical-align: top;
     text-align: right;
     line-height: 1em;
-    padding-top: 8px;
+    padding-top: 21px;
     padding-right: 5px;
 }
 
 #fb-image {
-    height: 30;
-    width: 30;
-    vertical-align: top;
+    height: 45;
+    width: 45;
     float: left;
+    padding-top: 10px;
+    vertical-align: top;
+    margin-left: 30%;
 }
 
 #header-menu {
     padding-left: 5px;
     height: 100%;
-    width: calc(100% - 185px);
+    width: 35%;
     float: left;
 }
 
 #header-login {
     height: 99%;
-    width: 130px;
+    width: 60%;
     vertical-align: top;
     margin-top: 0px;
     padding-top: 0px;
@@ -78,6 +86,8 @@ body {
     max-height: 100%;
     width: 100%;
     padding-top: 1cm;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #map-canvas
@@ -92,20 +102,39 @@ body {
 
 #comments {
     height: 100%;
-    width: 93%;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 45px;
+    width: 100%;
+    margin-bottom: 10px;
     border: groove;
     border-width: 1px;
     border-color: #617BA9;
-    padding: 5px 5px;
+}
+
+#exp-textbox {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding-right: -10px;
+}
+
+#share-form {
+    width: 100%;
+    height: 130px;
+    text-align: right;
+}
+
+#share-button {
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 35px;
 }
 
 #comment {
     width: 97%;
-    height: 100%;
-    min-height: 60px;
+    height: 45px;
+    min-height: 45px;
+    margin: 5px 5px;
 }
 
 #comment-pic {
@@ -119,7 +148,7 @@ body {
 
 #comment-text {
     height: 60px;
-    width: 100%;
+    width: calc(100% - 50px);
     padding: 4px 4px;
     max-width: calc(100% - 60px);
     text-align: right;

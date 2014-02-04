@@ -9,6 +9,7 @@
         #my-menu {
             background-color: #ffffff;
             color: #617BA9;
+            font-size: 30px;
         }
         #right-menu {
             background-color: #ffffff;
@@ -278,20 +279,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <div id="container">
     <div id="header">
-        <div id="header-menu"><a href="#my-menu"><img id="logo" height="70px" width="200px" src="static/logo.png"/></a>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
             <div id="fb-image">
                 {% if current_user %}
                 <a href="{{ current_user.profile_url }}"><img
-                        src="http://graph.facebook.com/{{ current_user.id }}/picture?width=30&height=30"/></a>
+                        src="http://graph.facebook.com/{{ current_user.id }}/picture?width=45&height=45"/></a>
                 {% else %}
-                <img src="static/user.png" height="30" width="30">
+                <img src="static/user.png" height="45" width="45">
                 {% endif %}
             </div>
             <div id="fbbutton">
                 <div id="fb-button">
-                    <fb:login-button height="15px" autologoutlink="true" scope="publish_stream"></fb:login-button>
+                    <fb:login-button height="35px" autologoutlink="true" scope="publish_stream"></fb:login-button>
                 </div>
             </div>
         </div>
@@ -300,9 +301,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
         <ul>
             <li><a href="/location">Search Nearby</a></li>
             <li><a href="/wiki">Wikipedia</a></li>
-            <li><a href="/comment">Comment</a></li>
-            <li><a href="/createevent">Create Event</a></li>
             <li><a href="/shareex">Share Experience</a></li>
+            <li><a href="/createevent">Create Event</a></li>
         </ul>
     </nav>
     <nav id="right-menu">
@@ -329,17 +329,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
                       <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
                       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
         </div>
-        {% if coms %}
-        <div id="headom">Comments</br></div>
+        <div id="headom">Latest Shares</br></div>
         <div id="comments">
-            {% for c in coms %}
+
+            <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+            {% for c in exp %}
             <div id="comment">
                 <div id="comment-pic">
-                    <img src="http://graph.facebook.com/{{ c.uid }}/picture?width=30&height=30"/>
+                    <a href="http://facebook.com/profile.php?id={{ c.id }}"><img src="http://graph.facebook.com/{{ c.id }}/picture?width=35&height=35"/></a>
                 </div>
-                <div id="comment-text">{{ c.comment }}</div>
-            </div>
+                <div id="comment-text">{{ c.experience }}</br>posted by {{ c.name }} for {{ c.city }}.</div>
+            </div></br>
             {% endfor %}
+            </marquee>
+        </div>
+        {% if current_user %}
+        <div>
+            </br>Share your experience</br>
+            <form method="post" action="/shareex" id="share-form">
+                <textarea name="story" id="exp-textbox"></textarea>
+                <input type="submit" value="share" id="share-button">
+            </form>
         </div>
         {% endif %}
     </div>

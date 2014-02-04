@@ -35,6 +35,7 @@ from Models import Friend
 from Models import FacebookDataGraph
 from Models import Markers
 from Models import Comment
+from Models import Experience
 
 config = {}
 config['webapp2_extras.sessions'] = dict(secret_key='')
@@ -229,17 +230,14 @@ class MobileHandler(BaseHandler):
                         print ""
             self.session["friends"] = friend_list
 
-        if (self.session.get("city")):
-            comments = db.GqlQuery("SELECT * FROM Comment WHERE name = :1", str(self.session.get("city")).lower())
-        else:
-            comments = db.GqlQuery("SELECT * FROM Comment WHERE name = 'dresden'")
+        exp = db.GqlQuery("SELECT * FROM Experience")
 
         self.response.out.write(template.render(dict(
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=cu,
             markers=marker,
             friends=friend_list,
-            coms=comments
+            exp=exp
         )))
 
 
@@ -342,9 +340,46 @@ class EventHandler(BaseHandler):
         if (self.session.get("user")):
             self.response.out.write(template.render(current_user=self.session.get("user"),
                                                     user=self.session.get("user")))
+        else:
+            self.response.out.write(template.render(user=None))
+
+    def post(self):
+        time = self.request.get('event-date')
+        name = self.request.get('event')
+        graph = facebook.GraphAPI(self.current_user['access_token'])
+        response = graph.create_event(name,time)
+        self.redirect('/mobile')
+
+
+class ExperienceHandler(BaseHandler):
+    def get(self):
+        template = jinja_environment.get_template('share_experience.html')
+
+        if (self.session.get("user")):
+            self.response.out.write(template.render(current_user=self.session.get("user"),
+                                                    user=self.session.get("user")))
 
         else:
             self.response.out.write(template.render(user=None))
+
+    def post(self):
+        name = self.request.get("name")
+        id = self.session.get("user")["id"]
+        if self.session.get("city"):
+            city = self.session.get("city")
+        else:
+            city = "Dresden"
+        name = self.session.get("user")["name"]
+        exp = self.request.get("story")
+
+        ex = Experience(name=name, city=city, id=id, experience=exp)
+        Experience.put(ex)
+
+        graph = facebook.GraphAPI(self.current_user['access_token'])
+
+        response = graph.put_wall_post(exp,profile_id="me")
+
+        self.redirect('/mobile')
 
 
 class MainHandler(BaseHandler):
@@ -375,7 +410,7 @@ jinja_environment = jinja2.Environment(
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
      ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler),
-     ('/createevent', EventHandler)], #('/shareex', ExperienceHandler), ('/friend', FriendHandler)
+     ('/createevent', EventHandler), ('/shareex', ExperienceHandler)], #('/friend', FriendHandler)
     debug=True,
     config=config
 )

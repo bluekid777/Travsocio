@@ -8,13 +8,13 @@
     <link rel="stylesheet" type="text/css" href="javascripts/jquery.mmenu.positioning.css">
     <style type="text/css">
         #my-menu {
-            background-color: #7B68EE;
-            color: #4682B4;
+            background-color: #FFFFFF;
+            color: #617BA9;
         }
 
         #right-menu {
-            background-color: #DCDCDC;
-            color: #4682B4;
+            background-color: #FFFFFF;
+            color: #617BA9;
         }
     </style>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
@@ -34,7 +34,6 @@
             });
         });
     </script>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/mhome.css"/>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -50,7 +49,7 @@
 
 <div id="container">
     <div id="header">
-        <div id="header-menu"><a href="#my-menu"><img id="logo" height="70px" width="200px" src="static/logo.png"/></a>
+        <div id="header-menu"><a href="#my-menu"><img id="logo" height="35px" width="130px" src="static/logo.png"/></a>
         </div>
         <div id="header-login">
             <div id="fb-image">
@@ -71,6 +70,7 @@
     </div>
     <nav id="my-menu" style="font-size: 140%">
         <ul>
+            <li><a href="/mobile">Home</a></li>
             <li><a href="/location">Search Nearby</a></li>
             <li><a href="/wiki">Wikipedia</a></li>
             <li><a href="/comment">Comment</a></li>
@@ -85,7 +85,18 @@
             <li><a href="">Friend3</a></li>
         </ul>
     </nav>
-    <div id="content"></div>
+    <div id="content">
+        {% if user %}
+        <div id="wiki-title">Share Experience</div>
+        <form method="post" action="/shareex" id="comment-form">
+            <div id="experience">
+                Name:<input type="text" id="textbox" name="name" placeholder="Alan"> Destination: <input type="text" placeholder="Dresden" id="textbox" name="city"></br>
+            </div>
+            <textarea id="comment-text" placeholder="Write down your story" name="story"></textarea></br>
+            <input type="submit" draggable="false" value="Save" id="button"/></br>
+        </form>
+        {% endif %}
+    </div>
     <div id="footer">
         &copy Travsocio Inc
     </div>
@@ -95,18 +106,12 @@
         FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
             xfbml: true});
         FB.Event.subscribe('{% if current_user %}auth.logout{% else %}auth.login{% endif %}', function (response) {
-            {%
-                if current_user %}
+            {% if current_user %}
                 window.location = "/logout"
-                {% else %
-                }
+                {% else %}
                 window.location.reload();
-                {%
-                    endif %
-                }
-            }
-            )
-            ;
+                {% endif %}
+            });
         };
         (function () {
             var e = document.createElement('script');

@@ -18,13 +18,13 @@ body {
 }
 
 #header {
-    height: 45px;
+    height: 65px;
     width: 100%;
     background-color: #ffffff;
     z-index: 100;
     margin-top: 0px;
     vertical-align: top;
-    padding-top: 3px;
+    padding-top: 0px;
     position: fixed;
     border: groove;
     border-top-width: 0px;
@@ -32,8 +32,14 @@ body {
     border-left-width: 0px;
     border-bottom-width: 1px;
     border-bottom-color: #617BA9;
-    font-size: 25px;
+    font-size: 45px;
     color: #ffffff;
+}
+
+#logo {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 7px;
 }
 
 #fbbutton {
@@ -43,28 +49,29 @@ body {
     vertical-align: top;
     text-align: right;
     line-height: 1em;
-    padding-top: 8px;
+    padding-top: 21px;
     padding-right: 5px;
 }
 
 #fb-image {
-    height: 30;
-    width: 30;
-    margin-top: 5px;
-    vertical-align: top;
+    height: 45;
+    width: 45;
     float: left;
+    padding-top: 10px;
+    vertical-align: top;
+    margin-left: 30%;
 }
 
 #header-menu {
     padding-left: 5px;
     height: 100%;
-    width: calc(100% - 185px);
+    width: 35%;
     float: left;
 }
 
 #header-login {
     height: 99%;
-    width: 125px;
+    width: 60%;
     vertical-align: top;
     margin-top: 0px;
     padding-top: 0px;
@@ -86,7 +93,8 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    margin: 5px 5px;
+    margin: 20px 20px;
+    text-align: center;
 }
 
 #wiki-form {
@@ -119,14 +127,21 @@ body {
 
 #comment-form {
     height: 40%;
-    width: 95%;
+    width: 100%;
     position: absolute;
 }
 
 #comment-text {
-    height: 30%;
+    height: 40px;
     width: 100%;
-    margin: 10px 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+#experience {
+    height: 25px;
+    width : 100%;
+    text-align: center;
 }
 
 #message {
@@ -140,6 +155,26 @@ body {
     width: 120px;
     margin-top: 10px;
     font-size: 20px;
+}
+
+#textbox {
+    height: 20px;
+    width: 25%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#textbox-event {
+    height: 20px;
+    width: 200px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+#date-event {
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
 }
 
 #footer {
