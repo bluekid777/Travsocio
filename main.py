@@ -1,19 +1,5 @@
 #!/usr/bin/env python
-#
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+
 FACEBOOK_APP_ID = '1426929370852106'
 FACEBOOK_APP_SECRET = '2158fd034e3235b417de3e55bd6df0c9'
 GOOGLE_API_KEY = 'AIzaSyAQhPtv1ef2PKLoYK9swqQEp-dBh7rIaHc'
@@ -45,13 +31,8 @@ config['webapp2_extras.sessions'] = dict(secret_key='')
 
 
 class BaseHandler(webapp2.RequestHandler):
-    """Provides access to the active Facebook user in self.current_user
 
-    The property is lazy-loaded on first access, using the cookie saved
-    by the Facebook JavaScript SDK to determine the user ID of the active
-    user. See http://developers.facebook.com/docs/authentication/ for
-    more information.
-    """
+
     @property
     def current_user(self):
         if self.session.get("user"):
@@ -99,12 +80,7 @@ class BaseHandler(webapp2.RequestHandler):
         return None
 
     def dispatch(self):
-        """
-        This snippet of code is taken from the webapp2 framework documentation.
-        See more at
-        http://webapp-improved.appspot.com/api/webapp2_extras/sessions.html
 
-        """
         self.session_store = sessions.get_store(request=self.request)
         try:
             webapp2.RequestHandler.dispatch(self)
@@ -113,12 +89,7 @@ class BaseHandler(webapp2.RequestHandler):
 
     @webapp2.cached_property
     def session(self):
-        """
-        This snippet of code is taken from the webapp2 framework documentation.
-        See more at
-        http://webapp-improved.appspot.com/api/webapp2_extras/sessions.html
 
-        """
         return self.session_store.get_session()
 
 
@@ -131,43 +102,18 @@ class HomeHandler(BaseHandler):
         # wiki api link: https://github.com/goldsmith/Wikipedia#
         # google image search api :: https://github.com/BirdAPI/Google-Search-API
 
-        ny = wikipedia.page('Dresden')
+        if self.session.get('city'):
+            ny = wikipedia.page(self.session.get('city'))
+        else:
+            ny = wikipedia.page('Dresden')
 
         # google places api -- > https://github.com/slimkrazy/python-google-places
-        google_places = GooglePlaces(GOOGLE_API_KEY)
-
-        query_results = google_places.nearby_search(location="Dresden, Germany", keyword='food',radius=20000, types=[types.TYPE_FOOD])
-
-
         cu = self.current_user
 
-        if query_results.has_attributions:
-            print query_results.html_attributions
-
-        locname = []
-        loclat = []
-        loclong = []
-        marker = ""
-
-        for place in query_results.places:
-            try:
-                n = str(place.name)
-                location = place.geo_location
-                lat = location["lat"]
-                lng = location["lng"]
-                locname.append(n)
-                loclat.append(lat)
-                loclong.append(lng)
-            except:
-                print " "
-
-        for i in range(len(locname)):
-            marker += locname[i]
-            marker += ": "
-            marker += str(loclat[i])
-            marker += ", "
-            marker += str(loclong[i])
-            marker += "; "
+        if self.session.get('mark'):
+            markers = self.session.get('mark')
+        else:
+            markers = ""
 
         friend_list = []
 
@@ -191,7 +137,8 @@ class HomeHandler(BaseHandler):
             facebook_app_id=FACEBOOK_APP_ID,
             current_user=cu,
             summary=ny.summary,
-            markers=marker,
+            link=ny.url,
+            markers=markers,
             friends=friend_list
         )))
 
@@ -309,7 +256,7 @@ class LocationHandler(BaseHandler):
         self.session["mark"] = marker
         self.session["city"] = city
 
-        self.redirect('/mobile')
+        self.redirect('/')
 
 
 class CommentHandler(BaseHandler):
@@ -399,6 +346,16 @@ class MainHandler(BaseHandler):
             self.redirect('/home')
 
 
+class TodaysEventHandler(BaseHandler):
+    def get(self):
+        if self.session.get('user'):
+            template = jinja_environment.get_template('todaysevents.html')
+            events = db.GqlQuery('SELECT * FROM Event WHERE start = :1', str(datetime.date.today()))
+            self.response.out.write(template.render(current_user=self.session.get("user"),
+                                                    events=events))
+        else:
+            self.redirect('/mobile')
+
 class LogoutHandler(BaseHandler):
     def get(self):
         if self.current_user is not None:
@@ -406,7 +363,7 @@ class LogoutHandler(BaseHandler):
             self.session["friends"] = None
             self.session["mark"] = None
 
-        self.redirect('/mobile')
+        self.redirect('/')
 
 
 jinja_environment = jinja2.Environment(
@@ -416,7 +373,7 @@ jinja_environment = jinja2.Environment(
 app = webapp2.WSGIApplication(
     [('/', MainHandler), ('/mobile', MobileHandler), ('/home', HomeHandler), ('/logout', LogoutHandler),
      ('/location', LocationHandler), ('/wiki', WikiHandler), ('/comment', CommentHandler),
-     ('/createevent', EventHandler), ('/shareex', ExperienceHandler)], #('/friend', FriendHandler)
+     ('/createevent', EventHandler), ('/shareex', ExperienceHandler),('/today', TodaysEventHandler)],
     debug=True,
     config=config
 )

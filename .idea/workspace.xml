@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc902a26-d95b-4a3d-82e9-c601c2c2ba42" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models.py" afterPath="$PROJECT_DIR$/Models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/todaysevents.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_event.html" afterPath="$PROJECT_DIR$/create_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dhome.html" afterPath="$PROJECT_DIR$/dhome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/mhome.css" afterPath="$PROJECT_DIR$/stylesheets/mhome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mhome.html" afterPath="$PROJECT_DIR$/mhome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/misc.css" afterPath="$PROJECT_DIR$/stylesheets/misc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wiki.html" afterPath="$PROJECT_DIR$/wiki.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travsocio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,14 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="348" column="20" selection-start="11155" selection-end="11155" vertical-scroll-proportion="0.0" vertical-offset="5762" max-vertical-offset="6405">
-              <folding>
-                <element signature="e#755#770#0" expanded="true" />
-                <marker date="1391553615000" expanded="true" signature="11134:11506" placeholder="..." />
-              </folding>
+            <state line="49" column="58" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-2.9893618" vertical-offset="2417" max-vertical-offset="5475">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,7 +47,7 @@
       <file leaf-file-name="dhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="300" column="27" selection-start="9919" selection-end="9919" vertical-scroll-proportion="-34.0" vertical-offset="3684" max-vertical-offset="5535">
+            <state line="191" column="54" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-5.0" vertical-offset="2745" max-vertical-offset="5520">
               <folding />
             </state>
           </provider>
@@ -57,8 +56,10 @@
       <file leaf-file-name="Models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="27" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
-              <folding />
+            <state line="25" column="27" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="2040">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +67,7 @@
       <file leaf-file-name="share_experience.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share_experience.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="18" selection-start="3548" selection-end="3548" vertical-scroll-proportion="-15.25" vertical-offset="1029" max-vertical-offset="1965">
+            <state line="93" column="18" selection-start="3548" selection-end="3548" vertical-scroll-proportion="-14.0" vertical-offset="1059" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
@@ -75,7 +76,16 @@
       <file leaf-file-name="create_event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="78" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-3.2916667" vertical-offset="1451" max-vertical-offset="2130">
+            <state line="19" column="27" selection-start="797" selection-end="797" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="2115">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wiki.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wiki.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="38" selection-start="739" selection-end="739" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="2010">
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -84,10 +94,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mhome.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todaysevents.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todaysevents.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2040">
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mhome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="24" selection-start="799" selection-end="799" vertical-scroll-proportion="0.5076142" vertical-offset="0" max-vertical-offset="6090">
+            <state line="11" column="24" selection-start="566" selection-end="566" vertical-scroll-proportion="210.625" vertical-offset="5220" max-vertical-offset="6090">
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,16 +121,7 @@
       <file leaf-file-name="mhome.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="13" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="3180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="location_mobile_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="64" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="1170">
+            <state line="150" column="29" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="3735">
               <folding />
             </state>
           </provider>
@@ -117,7 +130,7 @@
       <file leaf-file-name="misc.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/misc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="13" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="2374" max-vertical-offset="3075">
+            <state line="167" column="13" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="3075">
               <folding />
             </state>
           </provider>
@@ -141,29 +154,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dhome.html" />
-        <option value="$PROJECT_DIR$/stylesheets/dhome.css" />
         <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/Google.py" />
         <option value="$PROJECT_DIR$/misc.css" />
         <option value="$PROJECT_DIR$/comment.html" />
         <option value="$PROJECT_DIR$/share_experience.html" />
-        <option value="$PROJECT_DIR$/wiki.html" />
         <option value="$PROJECT_DIR$/location_mobile_form.html" />
         <option value="$PROJECT_DIR$/facebook.py" />
         <option value="$PROJECT_DIR$/stylesheets/misc.css" />
-        <option value="$PROJECT_DIR$/create_event.html" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Models.py" />
+        <option value="$PROJECT_DIR$/dhome.html" />
+        <option value="$PROJECT_DIR$/todaysevents.html" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/stylesheets/mhome.css" />
         <option value="$PROJECT_DIR$/mhome.html" />
+        <option value="$PROJECT_DIR$/create_event.html" />
+        <option value="$PROJECT_DIR$/wiki.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
+    <option name="x" value="56" />
     <option name="y" value="22" />
-    <option name="width" value="1269" />
+    <option name="width" value="1417" />
     <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -192,6 +205,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,18 +240,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -359,6 +372,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -380,9 +396,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -518,15 +531,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="22" width="1269" height="827" extended-state="0" />
-    <editor active="true" />
+    <frame x="56" y="22" width="1417" height="827" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2976288" sideWeight="0.674189" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.269876" sideWeight="0.674189" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -565,11 +578,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wikipedia/wikipedia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="7020" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/dhome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="300" column="0" selection-start="5305" selection-end="5538" vertical-scroll-proportion="0.0" vertical-offset="4367" max-vertical-offset="5310">
@@ -579,60 +587,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="19" selection-start="1421" selection-end="1852" vertical-scroll-proportion="-12.125" vertical-offset="399" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="13" selection-start="3380" selection-end="3380" vertical-scroll-proportion="-64.458336" vertical-offset="0" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="64" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share_experience.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="18" selection-start="3548" selection-end="3548" vertical-scroll-proportion="-15.25" vertical-offset="1029" max-vertical-offset="1965">
-          <folding />
-        </state>
+        <state line="46" column="19" selection-start="1421" selection-end="1852" vertical-scroll-proportion="-12.125" vertical-offset="399" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="46" selection-start="3946" selection-end="3946" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8955">
-          <folding>
-            <marker date="1391541592000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/travsocio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/user_location.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dhome.html">
+    <entry file="file://$PROJECT_DIR$/location_mobile_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="300" column="27" selection-start="9919" selection-end="9919" vertical-scroll-proportion="-34.0" vertical-offset="3684" max-vertical-offset="5535">
+        <state line="27" column="65" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.65217394" vertical-offset="0" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
@@ -644,9 +621,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/share_experience.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="18" selection-start="3548" selection-end="3548" vertical-scroll-proportion="-14.0" vertical-offset="1059" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todaysevents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2040">
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="29" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="3735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="54" selection-start="4776" selection-end="4776" vertical-scroll-proportion="-5.0" vertical-offset="2745" max-vertical-offset="5520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/create_event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="78" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-3.2916667" vertical-offset="1451" max-vertical-offset="2130">
+        <state line="19" column="27" selection-start="797" selection-end="797" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="2115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="38" selection-start="739" selection-end="739" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="2010">
           <folding>
             <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -657,34 +672,26 @@
     <entry file="file://$PROJECT_DIR$/Models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="27" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="348" column="20" selection-start="11155" selection-end="11155" vertical-scroll-proportion="0.0" vertical-offset="5762" max-vertical-offset="6405">
           <folding>
-            <element signature="e#755#770#0" expanded="true" />
-            <marker date="1391553615000" expanded="true" signature="11134:11506" placeholder="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/mhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="13" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="3180">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mhome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="799" selection-end="799" vertical-scroll-proportion="0.5076142" vertical-offset="0" max-vertical-offset="6090">
+        <state line="11" column="24" selection-start="566" selection-end="566" vertical-scroll-proportion="210.625" vertical-offset="5220" max-vertical-offset="6090">
           <folding>
             <element signature="n#style#0;n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#nav#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="58" selection-start="1401" selection-end="1401" vertical-scroll-proportion="-2.9893618" vertical-offset="2417" max-vertical-offset="5475">
+          <folding />
         </state>
       </provider>
     </entry>

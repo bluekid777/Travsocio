@@ -9,15 +9,16 @@
         #my-menu {
             background-color: #ffffff;
             color: #617BA9;
-            font-size: 30px;
+            font-size: 50px;
             width: 50%;
         }
         #right-menu {
             background-color: #ffffff;
             color: #617BA9;
             float: right;
+            font-size: 50px;
             margin-right: 7px;
-            width: 50%;
+            width: 40%;
             z-index: 100;
         }
     </style>
@@ -304,8 +305,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
         <ul>
             <li><a href="/location">Search Nearby</a></li>
             <li><a href="/wiki">Wikipedia</a></li>
-            <li><a href="/shareex">Share Experience</a></li>
             <li><a href="/createevent">Create Event</a></li>
+            <li><a href="/today">Today's Events</a></li>
         </ul>
     </nav>
     <nav id="right-menu">
@@ -313,8 +314,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             {% if current_user %}
             <div id="friend-bar">
                 {% for f in friends %}
-                <li><p><img src="https://graph.facebook.com/{{ f.username }}/picture?width=30&height=30"><a href="">{{
-                    f.name }}</a><input type="submit" value="invite" id="invite"></p>
+                <li><p><img src="https://graph.facebook.com/{{ f.username }}/picture?width=30&height=30"><a href="https://www.facebook.com/{{ f.username }}">{{ f.name }}</a></p>
                 <li>
                     {% endfor %}
             </div>
